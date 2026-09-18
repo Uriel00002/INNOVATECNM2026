@@ -805,7 +805,7 @@ h1 {
 /* Texto general */
 .card-text {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 15px;
   color: #333;
 }
 
@@ -830,63 +830,22 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#contacto {
-    margin-top: 100px;
-  padding: 40px 20px;
-  background-color: var(--tecnm-primary);
+.introduccion {
+  padding: 0 3rem;       /* más separación de los bordes laterales */
+  font-weight: 600;      /* negrita */
+  font-size: 1.2rem;     /* un poco más grande que el texto normal */
+  line-height: 1.8;      /* más espacio entre líneas para mejor lectura */
+  color: #222;           /* tono más fuerte para contraste */
 }
 
-#contacto h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 3em;
-  color: #ffffff;
-}
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.contact-map, .contact-info {
-  flex: 1;
-  min-width: 300px;
-}
 
-.contact-map{
-    align-items: center;
-    text-align: center;
-}
 
-.contact-info{
-    text-align: center;
-    align-content: center;
-}
 
-.contact-info p {
-  margin: 30px 0;
-  font-size: 1.1em;
-  color: white;
-}
 
-.contact-info .social-media i{
-    font-size: 2rem;
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
+
+
 
 
 
