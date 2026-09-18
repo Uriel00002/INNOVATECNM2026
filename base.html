@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Memoria digital InnovaTecNM 2026 - Centro de Investigación Sede">
+  <title>Memoria InnovaTecNM 2026 | TecNM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/memoria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header fixed-top">
+    <div class="gov-bar">
+      <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+        <div class="gov-brand">GOBIERNO DE <strong>MÉXICO</strong></div>
+        <nav aria-label="Gobierno de México">
+          <a href="#">Trámites</a>
+          <a href="#">Gobierno</a>
+          <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="Navegación principal">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+          <div class="brand-mark tecnm-mark">TecNM</div>
+          <span class="brand-divider"></span>
+          <div class="brand-mark campus-mark">IT Apizaco</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#acercade">Acerca de</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#cede">Cede</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Premiacion</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#contacto">Contacto</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="memoria-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 reveal">
+            <span class="section-kicker">TecNM · Innovación tecnológica</span>
+            <div class="event-badge"><span>2026</span> Año de Margarita Maza</div>
+            <h1><br><strong>InnovaTecNM 2026</strong></h1>
+<!--             <div class="hero-actions d-flex flex-wrap gap-3">
+              <a class="btn btn-primary-custom" href="#secciones"><i class="bi bi-grid-3x3-gap"></i> Explorar
+                secciones</a>
+              <a class="btn btn-outline-custom" href="#lineamientos"><i class="bi bi-card-checklist"></i> Ver
+                lineamientos</a>
+            </div> -->
+            <div class="hero-metrics mt-4">
+              <div><strong></strong><span>secciones</span></div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal delay-1">
+            <div id="heroCarousel" class="carousel slide hero-image-carousel" data-bs-ride="carousel"
+              data-bs-interval="4500">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Unidad de Posgrado e Investigación"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Apizaco"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                  aria-label="Campus del Instituto Tecnológico de Apizaco"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                  aria-label="InnovaTecNM 2026"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/carrusel-posgrado.jpg" class="d-block w-100"
+                    alt="Unidad de Posgrado e Investigación del Instituto Tecnológico de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Instituto Tecnológico de
+                      Apizaco</span><strong>Unidad de Posgrado e Investigación</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-apizaco.jpg" class="d-block w-100" alt="Letras monumentales de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Sede ·
+                      Tlaxcala</span><strong>Apizaco</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-campus.jpg" class="d-block w-100"
+                    alt="Vista aérea del Instituto Tecnológico de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Tecnológico Nacional de
+                      México</span><strong>Campus Apizaco</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-innovatecnm.jpg" class="d-block w-100"
+                    alt="Identidad gráfica InnovaTecNM 2026">
+                  <div class="carousel-caption hero-carousel-caption"><span>Memoria Digital</span><strong>InnovaTecNM
+                      2026</strong></div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"
+                aria-label="Imagen anterior"><span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"
+                aria-label="Imagen siguiente"><span class="carousel-control-next-icon"
+                  aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--     <section class="quick-info-wrapper" id="acercade">
+      <div class="quick-info-card">
+        <div class="quick-item">
+          <div class="quick-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <div><strong>Contenido</strong><small>Textos, programas y resúmenes</small></div>
+        </div>
+        <div class="quick-item">
+          <div class="quick-icon"><i class="bi bi-images"></i></div>
+          <div><strong>Evidencias</strong><small>Fotografías y material visual</small></div>
+        </div>
+        <div class="quick-item">
+          <div class="quick-icon"><i class="bi bi-people"></i></div>
+          <div><strong>Participantes</strong><small>Comités, jurados y asistentes</small></div>
+        </div>
+        <div class="quick-item">
+          <div class="quick-icon"><i class="bi bi-award"></i></div>
+          <div><strong>Cierre</strong><small>Premiación y anexos</small></div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="estructura" class="section-padding memoria-overview">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-5">
+          <div class="col-lg-8 reveal">
+            <span class="section-kicker">Arquitectura de contenido</span>
+            <h2>Una memoria dividida en cuatro etapas</h2>
+            <p class="section-lead mb-0">La estructura agrupa las 14 secciones para que el usuario entienda el recorrido
+              completo del evento: presentación, organización, desarrollo y cierre.</p>
+          </div>
+          <div class="col-lg-4 reveal delay-1">
+            <div class="overview-legend"><i class="bi bi-info-circle"></i> Cada tarjeta muestra el objetivo del apartado
+              y su límite de contenido.</div>
+          </div>
+        </div>
+        <div class="phase-grid reveal">
+          <a href="#fase-1" class="phase-card"><span>01</span><i class="bi bi-building"></i><strong>Marco
+              institucional</strong><small>Secciones 1–4</small></a>
+          <a href="#fase-2" class="phase-card"><span>02</span><i class="bi bi-diagram-3"></i><strong>Organización del
+              evento</strong><small>Secciones 5–9</small></a>
+          <a href="#fase-3" class="phase-card"><span>03</span><i class="bi bi-activity"></i><strong>Desarrollo y
+              actividades</strong><small>Secciones 10–12</small></a>
+          <a href="#fase-4" class="phase-card"><span>04</span><i class="bi bi-trophy"></i><strong>Cierre y
+              anexos</strong><small>Secciones 13–14</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="secciones" class="section-padding sections-area">
+      <div class="container" id="cede">
+        <div class="section-heading text-center mb-5 reveal">
+          <span class="section-kicker">Contenido oficial</span>
+          <h2>Las 14 secciones de la memoria</h2>
+          <p>Diseñadas como módulos independientes para facilitar la lectura, revisión y actualización de evidencias.
+          </p>
+        </div>
+
+        <div id="fase-1" class="phase-heading reveal"><span>Etapa 01</span>
+          <h3>Marco institucional</h3>
+        </div>
+        <div class="memory-grid mb-5">
+          <article class="memory-card reveal" data-number="01">
+            <div class="memory-icon"><i class="bi bi-journal-text"></i></div>
+            <div class="memory-content"><span class="memory-number">01</span>
+              <h3>Presentación de la memoria</h3>
+              <p>Síntesis de toda la organización y realización del evento, presentando de forma clara la información
+                principal.</p>
+              <div class="memory-limit"><i class="bi bi-text-paragraph"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal delay-1" data-number="02">
+            <div class="memory-icon"><i class="bi bi-megaphone"></i></div>
+            <div class="memory-content"><span class="memory-number">02</span>
+              <h3>Introducción de la memoria</h3>
+              <p>Presentación del InnovaTecNM considerando los objetivos y las bases descritas en la convocatoria.</p>
+              <div class="memory-limit"><i class="bi bi-text-paragraph"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal" data-number="03">
+            <div class="memory-icon"><i class="bi bi-building-check"></i></div>
+            <div class="memory-content"><span class="memory-number">03</span>
+              <h3>Descripción de la ciudad y del IT o Centro de Investigación Sede</h3>
+              <p>Información destacada sobre fundación, oferta educativa, acciones y resultados relevantes del entorno
+                sede.</p>
+              <div class="memory-limit"><i class="bi bi-file-earmark-image"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal delay-1" data-number="04">
+            <div class="memory-icon"><i class="bi bi-chat-quote"></i></div>
+            <div class="memory-content"><span class="memory-number">04</span>
+              <h3>Discurso de bienvenida</h3>
+              <p>Resumen del mensaje alusivo a cargo de la Dirección del IT o Centro de Investigación Sede.</p>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong></strong></div>
+            </div>
+          </article>
+        </div>
+
+        <div id="fase-2" class="phase-heading reveal"><span>Etapa 02</span>
+          <h3>Organización del evento</h3>
+        </div>
+        <div class="memory-grid memory-grid-single mb-5">
+          <article class="memory-card reveal delay-1" data-number="05">
+            <div class="memory-icon"><i class="bi bi-people-fill"></i></div>
+            <div class="memory-content"><span class="memory-number">05</span>
+              <h3>Organigrama, foto grupal y directorio del Comité Organizador</h3>
+              <p>Fotografía grupal, nombres, cargos, puesto institucional, correo electrónico oficial y teléfono de
+                oficina.</p>
+              <div class="memory-limit"><i class="bi bi-file-earmark-image"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal" data-number="06">
+            <div class="memory-icon"><i class="bi bi-calendar3"></i></div>
+            <div class="memory-content"><span class="memory-number">06</span>
+              <h3>Programa General de la Etapa Regional</h3>
+              <p>Orden del día de las actividades concernientes al InnovaTecNM en la Etapa Regional.</p>
+              <div class="memory-limit"><i class="bi bi-file-earmark-image"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card memory-card-dropdown memory-card-premium reveal delay-1" data-number="07">
+            <div class="memory-icon premium-icon"><i class="bi bi-diagram-3-fill"></i></div>
+            <div class="memory-content">
+              <div class="premium-card-head">
+                <div><span class="memory-number">SECCIÓN 07</span>
+                  <h3>Reuniones previas de trabajo</h3>
+                </div>
+                <span class="content-badge"><i class="bi bi-folder2-open"></i> 6 apartados</span>
+              </div>
+              <p class="premium-intro">Evidencia organizada de las reuniones previas, incluyendo fotografías, acuerdos,
+                minutas y participación de los equipos involucrados.</p>
+              <button class="memory-dropdown-toggle premium-toggle" type="button" aria-expanded="true"
+                aria-controls="submenu-07">
+                <span><i class="bi bi-list-ul"></i> Ver desglose de participantes</span><i
+                  class="bi bi-chevron-down toggle-arrow"></i>
+              </button>
+              <div class="memory-submenu is-open premium-submenu" id="submenu-07">
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-people-fill"></i></span><span class="submenu-copy"><strong>Equipo Coordinador
+                      Nacional del InnovaTecNM</strong><small>Planeación, coordinación y seguimiento
+                      general.</small></span><span class="submenu-arrow"><i class="bi bi-arrow-right"></i></span></a>
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-building-gear"></i></span><span class="submenu-copy"><strong>Comité
+                      Organizador</strong><small>Logística, operación y acuerdos de organización.</small></span><span
+                    class="submenu-arrow"><i class="bi bi-arrow-right"></i></span></a>
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-person-video3"></i></span><span class="submenu-copy"><strong>Equipo
+                      Moderador</strong><small>Sesiones de coordinación y criterios de moderación.</small></span><span
+                    class="submenu-arrow"><i class="bi bi-arrow-right"></i></span></a>
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-award-fill"></i></span><span class="submenu-copy"><strong>Jurado
+                      Calificador</strong><small>Reuniones de inducción y lineamientos de
+                      evaluación.</small></span><span class="submenu-arrow"><i class="bi bi-arrow-right"></i></span></a>
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-mortarboard-fill"></i></span><span
+                    class="submenu-copy"><strong>Estudiantes</strong><small>Información previa, orientación y
+                      participación.</small></span><span class="submenu-arrow"><i
+                      class="bi bi-arrow-right"></i></span></a>
+                <a href="#" class="memory-submenu-item premium-submenu-item"><span class="submenu-icon"><i
+                      class="bi bi-person-workspace"></i></span><span class="submenu-copy"><strong>Docentes
+                      asesores</strong><small>Sesiones informativas y acompañamiento académico.</small></span><span
+                    class="submenu-arrow"><i class="bi bi-arrow-right"></i></span></a>
+              </div>
+              <div class="premium-footer-meta"><span><i class="bi bi-file-earmark-text"></i></span><span><i
+                    class="bi bi-images"></i></span></div>
+            </div>
+          </article>
+          <article class="memory-card memory-card-participants reveal" data-number="08">
+            <div class="participants-section-head">
+              <div class="participants-title-wrap">
+                <div class="memory-icon participants-main-icon"><i class="bi bi-person-badge"></i></div>
+                <div>
+                  <span class="memory-number">SECCIÓN 08</span>
+                  <h3>Participantes</h3>
+                  <p>Directorio visual de participantes del InnovaTecNM 2026. Cada ficha puede sustituirse
+                    posteriormente por la fotografía, nombre, función y correo institucional real.</p>
+                </div>
+              </div>
+              <div class="participants-limit"><span><i class="bi bi-file-earmark-text"></i></span><span><i
+                    class="bi bi-images"></i></span></div>
+            </div>
+
+            <div class="participants-profile-grid">
+              <article class="participant-profile">
+                <div class="participant-avatar">IT</div>
+                <h4>IT o Centro de Investigación</h4>
+                <p>Institución participante</p>
+                <a href="mailto:correo@tecnm.mx"><i class="bi bi-envelope"></i> correo institucional</a>
+              </article>
+              <article class="participant-profile">
+                <div class="participant-avatar">ES</div>
+                <h4>Nombre del estudiante</h4>
+                <p>Estudiante participante</p>
+                <a href="mailto:correo@tecnm.mx"><i class="bi bi-envelope"></i> correo institucional</a>
+              </article>
+              <article class="participant-profile">
+                <div class="participant-avatar">DA</div>
+                <h4>Docente asesor</h4>
+                <p>Asesoría de proyecto</p>
+                <a href="mailto:correo@tecnm.mx"><i class="bi bi-envelope"></i> correo institucional</a>
+              </article>
+              <article class="participant-profile">
+                <div class="participant-avatar">EM</div>
+                <h4>Equipo moderador</h4>
+                <p>Moderación y logística</p>
+                <a href="mailto:correo@tecnm.mx"><i class="bi bi-envelope"></i> correo institucional</a>
+              </article>
+              <article class="participant-profile">
+                <div class="participant-avatar">JC</div>
+                <h4>Jurado Calificador</h4>
+                <p>Evaluación de proyectos</p>
+                <a href="mailto:correo@tecnm.mx"><i class="bi bi-envelope"></i> correo institucional</a>
+              </article>
+            </div>
+          </article>
+        </div>
+
+        <div id="fase-3" class="phase-heading reveal"><span>Etapa 03</span>
+          <h3>Desarrollo y actividades</h3>
+        </div>
+        <div class="memory-grid mb-5">
+          <article class="memory-card featured reveal" data-number="10">
+            <div class="memory-icon"><i class="bi bi-rocket-takeoff"></i></div>
+            <div class="memory-content"><span class="memory-number">10</span>
+              <h3>Desarrollo del InnovaTecNM</h3>
+              <p>Breve descripción de las actividades realizadas y evidencia de las evaluaciones tanto en el stand como
+                en la sala de evaluación.</p>
+              <div class="memory-tags"><span>Certamen de
+                  Proyectos</span><span>HackaTec</span><span>InnoBótica</span><span>Contrómetro InnovAcción</span></div>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong>Máximo:</strong> 8 cuartillas y 15 imágenes
+              </div>
+            </div>
+          </article>
+          <article class="memory-card reveal delay-1" data-number="11">
+            <div class="memory-icon"><i class="bi bi-mortarboard"></i></div>
+            <div class="memory-content"><span class="memory-number">11</span>
+              <h3>Desarrollo de talleres, conferencias, mentorías y consultorías</h3>
+              <p>Breve descripción de las actividades realizadas, cuando hayan sido programadas.</p>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal" data-number="12">
+            <div class="memory-icon"><i class="bi bi-bus-front"></i></div>
+            <div class="memory-content"><span class="memory-number">12</span>
+              <h3>Visitas guiadas</h3>
+              <p>Breve descripción de las actividades realizadas, estadística e información de los grupos visitantes.
+              </p>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong></strong></div>
+            </div>
+          </article>
+        </div>
+
+        <div id="fase-4" class="phase-heading reveal"><span>Etapa 04</span>
+          <h3>Cierre y anexos</h3>
+        </div>
+        <div class="memory-grid">
+          <article class="memory-card featured reveal" data-number="13">
+            <div class="memory-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="memory-content"><span class="memory-number">13</span>
+              <h3>Ceremonia de premiación y clausura</h3>
+              <p>Programa, presídium, resumen de mensajes y proyectos ganadores absolutos y acreditados a la Etapa
+                Nacional.</p>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong></strong></div>
+            </div>
+          </article>
+          <article class="memory-card reveal delay-1" data-number="14">
+            <div class="memory-icon"><i class="bi bi-paperclip"></i></div>
+            <div class="memory-content"><span class="memory-number">14</span>
+              <h3>Anexos: eventos culturales y cobertura</h3>
+              <p>Eventos culturales, fotografías, notas periodísticas, crónica fotográfica, directorios y material
+                complementario.</p>
+              <div class="memory-limit"><i class="bi bi-images"></i><strong></strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lineamientos" class="section-padding guidelines-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <span class="section-kicker">Diseño editorial</span>
+            <h2>Lineamientos visuales para mantener una memoria uniforme</h2>
+            <p class="section-lead">La página usa la identidad visual azul institucional del TecNM y acentos
+              dorados/magenta inspirados en la comunicación de InnovaTecNM 2026.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="guideline-list">
+              <div class="guideline-item reveal"><i class="bi bi-check2-circle"></i>
+                <div><strong>Jerarquía clara</strong><span>Número, título, descripción y límite de cada apartado siempre
+                    visibles.</span></div>
+              </div>
+              <div class="guideline-item reveal delay-1"><i class="bi bi-check2-circle"></i>
+                <div><strong>Contenido modular</strong><span>Cada sección puede crecer después con galerías, documentos,
+                    tablas y estadísticas.</span></div>
+              </div>
+              <div class="guideline-item reveal"><i class="bi bi-check2-circle"></i>
+                <div><strong>Diseño responsivo</strong><span>Dos columnas en escritorio y una columna en dispositivos
+                    móviles.</span></div>
+              </div>
+              <div class="guideline-item reveal delay-1"><i class="bi bi-check2-circle"></i>
+                <div><strong>Navegación rápida</strong><span>Acceso directo por etapas y desplazamiento suave dentro de
+                    la memoria.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h1>Contacto</h1>
+      <div class="contact-container">
+        <!-- Columna izquierda: Mapa -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.123456789!2d-98.123456!3d19.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c123456789abcd%3A0x123456789abcdef!2sInstituto%20Tecnol%C3%B3gico%20de%20Apizaco!5e0!3m2!1ses!2smx!4v0000000000000"
+            width="70%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- Columna derecha: Información -->
+        <div class="contact-info">
+          <div class="data">
+            <p><strong>Dirección:</strong> Av. Instituto Tecnológico No. 418, San Andrés Ahuashuatepec,
+              Municipio de Tzompantepec, Tlaxcala, Méx. C.P. 90491.</p>
+            <p><strong>Correo:</strong> info@ita.mx</p>
+            <p><strong>Teléfono:</strong> 2414172010</p>
+            <p><strong>Teléfono:</strong> 2414180321</p>
+          </div>
+          <div class="social-media">
+            <a href="https://facebook.com/ita" target="_blank" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com/ita" target="_blank" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://instagram.com/ita" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/school/ita" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://youtube.com/ita" target="_blank" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tecnológico Nacional de México Campus Apizaco. Todos los derechos reservados.</p>
+    <p>Fecha de última actualización: 8 de septiembre de 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
