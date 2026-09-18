@@ -103,3 +103,111 @@
 .hero-image-carousel .carousel-control-next-icon { width:42px; height:42px; background-size:45%; border-radius:50%; background-color:rgba(7,35,68,.58); backdrop-filter:blur(8px); }
 @media (max-width: 991.98px) { .hero-image-carousel .carousel-inner,.hero-image-carousel .carousel-item{height:430px}.hero-image-carousel{border-radius:30px} }
 @media (max-width: 575.98px) { .hero-image-carousel .carousel-inner,.hero-image-carousel .carousel-item{height:330px}.hero-image-carousel{border-radius:24px}.hero-carousel-caption{bottom:38px}.hero-carousel-caption strong{font-size:1.15rem}.hero-carousel-caption span{font-size:.72rem} }
+
+/* ===== Tarjetas interactivas Etapa 01 ===== */
+.memory-card.is-interactive{position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;border:1px solid rgba(17,55,103,.08)}
+.memory-card.is-interactive:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(19,54,96,.14)}
+.memory-card .card-preview{width:100%;height:150px;object-fit:cover;border-radius:16px;margin:14px 0 8px;border:1px solid #e6edf6}
+.memory-action{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid #e6edf6;color:#123d73;font-weight:800;text-decoration:none}
+.memory-action .action-arrow{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#123d73;color:#fff;transition:transform .2s ease,background .2s ease}
+.memory-action:hover .action-arrow{transform:translateX(4px);background:#c6922e}
+.memory-card-03{background:linear-gradient(145deg,#fff 0%,#f5f9ff 100%)}
+.memory-card-03 .city-highlights{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.memory-card-03 .city-highlights span{font-size:.78rem;font-weight:700;color:#173f70;background:#eaf2fb;padding:7px 10px;border-radius:999px}
+#welcome-message{scroll-margin-top:95px}
+.return-home{position:fixed;right:24px;bottom:24px;z-index:1000;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#173f70;color:#fff;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.return-home:hover{color:#fff;transform:translateY(-2px)}
+
+/* ===== Etapa 01 compacta y pie institucional ===== */
+.memory-card-compact{grid-template-columns:58px 1fr;gap:16px;padding:21px 22px;border-radius:20px;min-height:0}
+.memory-card-compact .memory-icon{width:52px;height:52px;border-radius:15px;font-size:1.35rem}
+.memory-card-compact h3{font-size:1.08rem;margin-bottom:7px}
+.memory-card-compact p{font-size:.88rem;line-height:1.5}
+.memory-card-compact .card-preview{height:96px;margin:10px 0 4px;border-radius:12px}
+.memory-card-compact .memory-action{margin-top:11px;padding-top:10px;font-size:.84rem}
+.memory-card-compact .memory-action .action-arrow{width:34px;height:34px}
+.memory-card-compact .city-highlights{margin:9px 0;gap:6px}
+.memory-card-compact .city-highlights span{font-size:.7rem;padding:5px 8px}
+
+.contact-footer{padding:70px 0 24px;background:linear-gradient(145deg,#071d38,#0c315d);color:#fff}
+.contact-heading{max-width:760px;margin-bottom:30px}.contact-heading h2{font-weight:800;margin:8px 0 10px}.contact-heading p{color:rgba(255,255,255,.72);margin:0;line-height:1.65}
+.contact-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:24px;align-items:stretch}.map-card,.contact-card{border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:rgba(255,255,255,.06);box-shadow:0 18px 46px rgba(0,0,0,.18)}
+.map-card iframe{display:block;width:100%;height:100%;min-height:390px;border:0;filter:saturate(.88)}
+.contact-card{padding:30px}.contact-label{display:inline-block;color:#d8b365;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-card h3{font-size:1.4rem;font-weight:800;margin:7px 0 20px}.contact-card>a{display:flex;gap:12px;align-items:flex-start;padding:11px 0;color:rgba(255,255,255,.86);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.09);font-size:.9rem;line-height:1.5}.contact-card>a i{color:#d8b365;font-size:1.05rem;margin-top:2px}.contact-card>a:hover{color:#fff}.social-block{padding-top:22px}.social-block>span{display:block;font-size:.82rem;color:rgba(255,255,255,.65);margin-bottom:12px}.social-links{display:flex;flex-wrap:wrap;gap:10px}.social-links a{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);color:#fff;font-size:1.1rem;transition:.2s}.social-links a:hover{transform:translateY(-3px);background:#fff;color:#0c315d}.footer-bottom{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.58);font-size:.82rem}.footer-bottom a{color:#fff;text-decoration:none;font-weight:700}
+@media(max-width:991px){.contact-grid{grid-template-columns:1fr}.map-card iframe{min-height:330px}}
+@media(max-width:575px){.memory-card-compact{grid-template-columns:1fr;padding:20px}.memory-card-compact .card-preview{height:130px}.contact-footer{padding-top:52px}.contact-card{padding:23px}.footer-bottom{align-items:flex-start;flex-direction:column}}
+
+/* ===== Correcciones visuales: bienvenida, comité y Etapa 01 ===== */
+.welcome-section{padding:64px 0;background:linear-gradient(135deg,#f5f8fc 0%,#fff 55%,#f1f5fa 100%)}
+.welcome-section>.container-fluid{max-width:1500px;margin:auto}
+.welcome-section .row{background:#fff;border:1px solid #e0e7f0;border-radius:28px;overflow:hidden;box-shadow:0 20px 55px rgba(13,45,82,.10);margin:0}
+.welcome-section .col-lg-4{padding:0;align-self:stretch;background:#e9eef5}
+.welcome-photo{width:100%;height:100%;min-height:560px;max-height:680px;object-fit:cover;object-position:center top;display:block}
+.welcome-section .col-lg-8{padding:48px 52px}
+.welcome-section h4{font-size:1.55rem;color:#0c2d59}
+.welcome-copy{font-size:1rem;line-height:1.82;color:#4d5d72;text-align:justify;margin:0}
+.welcome-section .fs-5{font-size:1.05rem!important;line-height:1.7;color:#1d3557;font-weight:600}
+.welcome-signature{padding-top:20px;border-top:1px solid #e8edf4;color:#0c2d59}
+.welcome-signature h5{font-size:1rem;line-height:1.45}
+
+.comite-section{padding:70px 0 78px;background:#f6f8fb;overflow:hidden}
+.comite-section>.container-fluid{max-width:1500px;margin:auto}
+.comite-titulo{text-align:center;max-width:760px;margin:0 auto 36px}
+.comite-etiqueta{display:inline-flex;padding:7px 14px;border-radius:999px;background:#e9f0f9;color:#123d73;font-size:.76rem;font-weight:800;letter-spacing:.12em}
+.comite-titulo h2{margin:12px 0 8px;color:#0c2d59;font-size:2.1rem;font-weight:800}
+.comite-linea{width:58px;height:4px;border-radius:5px;background:#c6922e;margin:0 auto 12px}
+.comite-titulo p{color:#66758a;margin:0}
+.comite-carousel-wrapper{position:relative;padding:0 58px}
+.comite-carousel{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:8px 4px 22px;scroll-snap-type:x mandatory}
+.comite-carousel::-webkit-scrollbar{display:none}
+.comite-card{flex:0 0 calc((100% - 40px)/3);min-width:300px;scroll-snap-align:start;background:#fff;border:1px solid #dfe7f1;border-radius:22px;padding:26px;box-shadow:0 12px 32px rgba(13,45,82,.08);transition:.25s ease}
+.comite-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(13,45,82,.13);border-color:#cdd9e8}
+.comite-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.comite-numero{font-size:.78rem;font-weight:900;letter-spacing:.12em;color:#9aa9bb}
+.comite-icono{width:48px;height:48px;border-radius:14px;background:#edf3fa;color:#123d73;display:grid;place-items:center;font-size:1.3rem}
+.comite-card h3{font-size:1.22rem;font-weight:800;color:#0d2e59;margin:0}
+.comite-separador{width:42px;height:3px;background:#c6922e;border-radius:3px;margin:14px 0}
+.comite-dependencia{color:#68778b;line-height:1.55;min-height:48px;margin-bottom:18px}
+.comite-nombre{font-weight:800;color:#173d72;margin:0}
+.comite-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:44px;height:44px;border:0;border-radius:50%;background:#123d73;color:#fff;box-shadow:0 8px 20px rgba(12,45,89,.22);font-size:1.2rem;cursor:pointer}
+.comite-btn:hover{background:#c6922e}.comite-btn-left{left:2px}.comite-btn-right{right:2px}
+.comite-indicador{width:72px;height:4px;background:linear-gradient(90deg,#123d73,#c6922e);border-radius:5px;margin:8px auto 0}
+
+/* Etapa 01: tres accesos equilibrados */
+#fase-1 + .memory-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+#fase-1 + .memory-grid .memory-card-compact{grid-template-columns:52px 1fr;padding:22px;min-height:315px;height:100%}
+#fase-1 + .memory-grid .memory-content{display:flex;flex-direction:column;height:100%}
+#fase-1 + .memory-grid .memory-action{margin-top:auto}
+#fase-1 + .memory-grid .card-preview{height:90px;object-fit:cover}
+#fase-1 + .memory-grid .memory-card-03{background:#fff}
+
+@media(max-width:991px){
+ .welcome-section .row{border-radius:22px}.welcome-photo{min-height:440px}.welcome-section .col-lg-8{padding:34px}
+ .comite-card{flex-basis:calc((100% - 20px)/2)}
+ #fase-1 + .memory-grid{grid-template-columns:1fr}
+ #fase-1 + .memory-grid .memory-card-compact{min-height:0}
+}
+@media(max-width:575px){
+ .welcome-section{padding:35px 0}.welcome-photo{min-height:390px;max-height:480px}.welcome-section .col-lg-8{padding:26px 22px}.welcome-copy{text-align:left}
+ .comite-section{padding:50px 0}.comite-carousel-wrapper{padding:0 44px}.comite-card{flex-basis:100%;min-width:260px;padding:22px}.comite-btn{width:38px;height:38px}
+}
+
+/* ===== Tarjetas 07 y 08 compactas y desplegables al hacer clic ===== */
+.memory-card-click-toggle{cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.memory-card-click-toggle:focus-visible{outline:3px solid rgba(23,69,116,.22);outline-offset:4px}
+.memory-card-click-toggle:not(.is-expanded){padding-top:22px;padding-bottom:22px}
+.memory-card-click-toggle:not(.is-expanded) .premium-intro{margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.memory-card-click-toggle:not(.is-expanded) .premium-footer-meta{display:none}
+.memory-card-click-toggle .memory-dropdown-toggle{pointer-events:none}
+.memory-card-click-toggle.is-expanded .toggle-arrow{transform:rotate(180deg)}
+.participants-toggle{margin-top:16px;padding:12px 15px;border:1px solid #dce5ef;border-radius:14px;background:#f7faff;box-shadow:none}
+.participants-toggle span{display:flex;align-items:center;gap:9px;font-size:.9rem;font-weight:800;color:#173f70}
+.participants-toggle>.toggle-arrow{width:30px;height:30px;border-radius:50%;background:#153f72;color:#fff;display:grid;place-items:center;transition:transform .25s ease}
+.participants-submenu{width:100%}
+.participants-submenu.is-open{margin-top:0!important}
+.memory-card-participants:not(.is-expanded){padding:22px 26px}
+.memory-card-participants:not(.is-expanded) .participants-section-head{padding-bottom:0;border-bottom:0;align-items:center}
+.memory-card-participants:not(.is-expanded) .participants-title-wrap p{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.memory-card-participants:not(.is-expanded) .participants-limit{display:none}
+.memory-card-participants:not(.is-expanded) .participants-main-icon{width:54px;height:54px;flex-basis:54px}
+@media(max-width:575px){.memory-card-click-toggle:not(.is-expanded),.memory-card-participants:not(.is-expanded){padding:19px 18px}.memory-card-participants:not(.is-expanded) .participants-title-wrap p{display:none}}
