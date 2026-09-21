@@ -1,0 +1,262 @@
+.contenedor {
+    background-color: rgb(255, 254, 254);
+    margin: 3rem 3rem;
+    padding: 2rem 2rem;
+    line-height: 1.8;
+    color: #222;
+    border-radius: 10px;
+}
+
+.discurso {
+    padding: 0 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #222;
+}
+
+
+
+
+
+.contacto {
+    background-color: var(--tecnm-primary);
+    padding: 30px 60px;
+    color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.contacto .map {}
+
+.contacto .map iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 15px;
+}
+
+
+.contacto .info-contact .data i {
+    color: var(--tecnm-gold);
+}
+
+.contacto .info-contact .data a {}
+
+.contacto .info-contact a {
+    color: white;
+    margin: 5px 10px;
+}
+
+.section-data .data {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+}
+
+.section-data .button {
+    text-align: center;
+    align-content: center;
+}
+
+
+.section-data .button i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--tecnm-primary);
+    color: var(--tecnm-gold);
+    font-size: 1.2rem;
+}
+
+.section-data .button i:hover {
+    background-color: var(--tecnm-gold);
+    color: var(--tecnm-primary);
+}
+
+/* Contenedor principal */
+.info-contact {
+    background-color: var(--tecnm-primary-dark);
+    /* azul oscuro */
+    color: #f1f1f1;
+    /* texto claro */
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Etiqueta superior (Contacto) */
+.contact-label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d4b25f;
+    /* dorado suave */
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+/* Título principal */
+.info-contact h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bloque de datos */
+.data a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+.data a:hover {
+    color: #d4b25f;
+}
+
+/* Íconos */
+.data i {
+    font-size: 1.3rem;
+}
+
+/* Línea divisoria */
+.data a+br+a {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 0.8rem;
+}
+
+/* Bloque de redes sociales */
+.social-block {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-block span {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+    font-size: 1.4rem;
+    margin: 0 0.4rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #d4b25f;
+    color: #1e2a47;
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        margin: 1rem 1rem;
+        padding: 1rem 1rem;
+        line-height: 1;
+    }
+
+    .directora .name {
+        font-size: small;
+    }
+
+    .name {
+        font-size: small;
+    }
+
+    .comite-titulo h2 {
+        font-size: small;
+    }
+
+    .introduccion h2 {
+        font-size: small;
+    }
+
+    .introduccion p {
+        font-size: x-small;
+    }
+
+    .discurso {
+        margin: 0 20px;
+        padding: 2px;
+    }
+
+    .discurso h1 {
+        font-size: medium;
+    }
+
+    .discurso .card-text {
+        font-size: x-small;
+    }
+
+    .discurso .directora {
+        text-align: center;
+    }
+
+
+    .discurso .card-text p strong {
+        font-size: small;
+    }
+
+    .section-data .data {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacto .map {
+        padding: 0;
+    }
+
+    .contacto .map iframe {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .info-contact {
+        width: 100%;
+        /* el contenedor usa todo el ancho disponible */
+        padding: 1.5rem;
+        /* reduce el padding para que no se vea tan grande */
+        border-radius: 15px;
+        /* opcional: elimina bordes redondeados si quieres que ocupe todo */
+    }
+
+    .info-contact h3 {
+        font-size: 1.4rem;
+        /* texto del título más pequeño */
+    }
+
+    .data a {
+        font-size: 0.9rem;
+        /* texto general más compacto */
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        /* íconos ligeramente más pequeños */
+        margin: 0 0.3rem;
+    }
+
+    footer {
+        font-size: small;
+    }
+}

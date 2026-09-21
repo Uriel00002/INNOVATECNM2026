@@ -777,55 +777,96 @@ a {
 
 /* Contenedor general */
 .card {
-  padding: 2rem; /* agrega espacio interno */
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    /* agrega espacio interno */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Imagen y texto */
 .card img {
-  border-radius: 8px;
-  margin-right: 1.5rem; /* separa la imagen del texto */
-  max-width: 25vw;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+    /* separa la imagen del texto */
+    max-width: 25vw;
 }
 
 .card-body {
-  padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 
 /* Encabezado principal */
 h1 {
-  font-weight: 800;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: var(--tecnm-primary);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--tecnm-primary);
 }
 
 /* Texto general */
 .card-text {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #333;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #333;
 }
 
 /* Ajuste de espaciado entre columnas */
-.row.g-0 > [class*="col-"] {
-  padding: 0.5rem;
+.row.g-0>[class*="col-"] {
+    padding: 0.5rem;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-  .card img {
-    margin-bottom: 1rem;
-    margin-right: 0;
-  }
+    .card img {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
 }
 
 
-#inicio p{
+#inicio p {
     color: var(--tecnm-primary);
-    margin:  10px auto;
+    margin: 10px auto;
+}
+
+
+
+.introduccion {
+    padding: 0 3rem;
+    /* más separación de los bordes laterales */
+    font-weight: 600;
+    /* negrita */
+    font-size: 1.2rem;
+    /* un poco más grande que el texto normal */
+    line-height: 1.8;
+    /* más espacio entre líneas para mejor lectura */
+    color: #222;
+    /* tono más fuerte para contraste */
+}
+
+.introduccion:hover{
+    color: var(--tecnm-gold);
+}
+
+
+
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.35fr .85fr;
+    gap: 24px;
+    align-items: stretch
+}
+
+.map-card,
+.contact-card {
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .06);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, .18)
 }
 
 
@@ -834,63 +875,7 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-#contacto {
-    margin-top: 100px;
-  padding: 40px 20px;
-  background-color: var(--tecnm-primary);
-}
-
-#contacto h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 3em;
-  color: #ffffff;
-}
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contact-map, .contact-info {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-map{
-    align-items: center;
-    text-align: center;
-}
-
-.contact-info{
-    text-align: center;
-    align-content: center;
-}
-
-.contact-info p {
-  margin: 30px 0;
-  font-size: 1.1em;
-  color: white;
-}
-
-.contact-info .social-media i{
-    font-size: 2rem;
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-
-
-footer{
+footer {
     text-align: center;
     height: auto;
     background-color: var(--tecnm-primary-dark);
