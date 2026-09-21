@@ -52,8 +52,33 @@
     margin: 5px 10px;
 }
 
+.section-data .data {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+}
+
+.section-data .button {
+    text-align: center;
+    align-content: center;
+}
 
 
+.section-data .button i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--tecnm-primary);
+    color: var(--tecnm-gold);
+    font-size: 1.2rem;
+}
+
+.section-data .button i:hover {
+    background-color: var(--tecnm-gold);
+    color: var(--tecnm-primary);
+}
 
 /* Contenedor principal */
 .info-contact {
@@ -147,17 +172,18 @@
         padding: 1rem 1rem;
         line-height: 1;
     }
-    .directora .name{
+
+    .directora .name {
         font-size: small;
     }
 
-    .name{
+    .name {
         font-size: small;
     }
 
-    .comite-titulo h2{
+    .comite-titulo h2 {
         font-size: small;
-    } 
+    }
 
     .introduccion h2 {
         font-size: small;
@@ -187,6 +213,13 @@
 
     .discurso .card-text p strong {
         font-size: small;
+    }
+
+    .section-data .data {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .contacto .map {
