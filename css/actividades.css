@@ -1,0 +1,79 @@
+
+#actividades .card {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  text-align: center;  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+#actividades .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+
+#actividades .card img {
+  max-width: 80%;   
+  height: auto;     
+  margin: 15px auto;
+  display: block;
+}
+
+/* Títulos y subtítulos */
+#actividades .card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary-color, #004080);
+  margin-bottom: 0.5rem;
+}
+
+#actividades small {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+#actividades ul {
+  padding-left: 0; 
+  list-style-position: inside; 
+  margin: 0;
+}
+
+#actividades ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: left; 
+}
+
+
+#actividades .card.bg-light {
+  background: #f9f9f9;
+  border: 2px solid var(--primary-color, #004080);
+}
+
+#actividades .card.bg-light ul li {
+  font-style: italic;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  #actividades .card {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  #actividades .card img {
+    max-width: 100%; 
+  }
+}
