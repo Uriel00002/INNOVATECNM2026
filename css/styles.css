@@ -845,6 +845,10 @@ h1 {
     /* tono más fuerte para contraste */
 }
 
+.introduccion:hover{
+    color: var(--tecnm-gold);
+}
+
 
 
 
