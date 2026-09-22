@@ -1,254 +1,508 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovaTecNM 2026 - Actividades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet">
 
-    <title>Actividades</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-    <link href="css/variables.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/components.css" rel="stylesheet" />
-    <link href="css/memoria.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/memoria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/actividades.css">
 </head>
 
 <body>
-    <header class="site-header fixed-top">
-        <div class="gov-bar">
-            <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
-                <div class="gov-brand">
-                    GOBIERNO DE <strong>MÉXICO</strong>
-                </div>
-                <nav>
-                    <a href="#">Trámites</a>
-                    <a href="#">Gobierno</a>
-                    <a href="#">
-                        <i class="bi bi-search"></i>
-                    </a>
-                </nav>
+
+  <header class="site-header fixed-top">
+
+    <div class="gov-bar">
+      <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+
+        <div class="gov-brand">
+          GOBIERNO DE <strong>MÉXICO</strong>
+        </div>
+
+        <nav aria-label="Gobierno de México">
+          <a href="#">Trámites</a>
+          <a href="#">Gobierno</a>
+
+          <a href="#" aria-label="Buscar">
+            <i class="bi bi-search"></i>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-lg main-navbar"
+      aria-label="Navegación principal"
+    >
+      <div class="container-fluid px-lg-5">
+
+        <a
+          class="navbar-brand d-flex align-items-center gap-3"
+          href="index.html"
+        >
+          <div class="brand-mark tecnm-mark">TecNM</div>
+
+          <span class="brand-divider"></span>
+
+          <div class="brand-mark campus-mark">
+            IT Apizaco
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Inicio
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#acerca">
+                Acerca de
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="organizacion.html">
+                Organización
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="participantes.html">
+                Participantes
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="eventos.html">
+                Eventos
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="actividades.html">
+                Actividades
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="ceremonias.html">
+                Ceremonias
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">
+                Galería
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contacto">
+                Contacto
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="actividades" class="container py-5">
+
+      <h2 class="mb-4">
+        Actividades
+      </h2>
+
+      <div class="row g-4 mb-4">
+
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Domingo / Lunes
+              </h5>
+
+              <small class="text-muted">
+                10:00 AM - 22:00 PM
+              </small>
+
+              <ul class="mt-3">
+                <li>
+                  <strong>10:00 - 14:00:</strong>
+                  Reunión de seguimiento.
+                </li>
+
+                <li>
+                  <strong>14:00 - 15:30:</strong>
+                  Receso para alimentos.
+                </li>
+
+                <li>
+                  <strong>15:30 - 20:00:</strong>
+                  Recorrido de instalaciones.
+                </li>
+
+                <li>
+                  <strong>20:00 - 22:00:</strong>
+                  Espacio para alimentos.
+                </li>
+              </ul>
+
             </div>
+          </div>
         </div>
 
 
-        <nav class="navbar navbar-expand-lg main-navbar">
-            <div class="container-fluid px-lg-5">
 
+        <div class="col-md-4">
 
-                <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-                    <div class="brand-mark tecnm-mark">TecNM</div>
+          <div class="card h-100 shadow-sm">
 
-                    <span class="brand-divider"></span>
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
 
-                    <div class="brand-mark campus-mark">IT Apizaco</div>
-                </a>
+            <div class="card-body">
 
+              <h5 class="card-title">
+                Lunes / Martes
+              </h5>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+              <small class="text-muted">
+                10:00 AM - 22:00 PM
+              </small>
 
+              <ul class="mt-3">
 
-                <div class="collapse navbar-collapse" id="mainMenu">
-                    <ul class="navbar-nav ms-auto">
+                <li>
+                  <strong>10:00 - 18:00:</strong>
+                  Registro de participantes.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                Inicio
-                            </a>
-                        </li>
+                <li>
+                  <strong>10:00 - 19:00:</strong>
+                  Montaje de proyectos.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="organizacion.html">
-                                Organización
-                            </a>
-                        </li>
+                <li>
+                  <strong>11:00 - 13:00:</strong>
+                  Equipo Moderador.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="participantes.html">
-                                Participantes
-                            </a>
-                        </li>
+                <li>
+                  <strong>12:00 - 14:00:</strong>
+                  Revisión de instalaciones.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="eventos.html">
-                                Eventos
-                            </a>
-                        </li>
+                <li>
+                  <strong>17:00 - 19:30:</strong>
+                  Certamen de Proyectos.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="actividades.html">
-                                Actividades
-                            </a>
-                        </li>
+                <li>
+                  <strong>19:30 - 20:30:</strong>
+                  HackaTec e InnovAcción.
+                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="ceremonias.html">
-                                Ceremonias
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">
-                                Galería
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+              </ul>
 
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
 
+        <div class="col-md-4">
 
+          <div class="card h-100 shadow-sm">
 
-    <main class="inner-page">
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
 
-        <article class="inner-card">
+            <div class="card-body">
 
+              <h5 class="card-title">
+                Martes / Miércoles
+              </h5>
 
-            <a class="back-home" href="index.html#secciones">
-                <i class="bi bi-arrow-left"></i>
-                Regresar a las secciones
-            </a>
+              <small class="text-muted">
+                07:00 AM - 22:00 PM
+              </small>
 
-            <div class="section-nav-icon mb-3">
-                <i class="bi bi-lightbulb-fill"></i>
+              <ul class="mt-3">
+
+                <li>
+                  <strong>08:00 - 08:30:</strong>
+                  HackaTec: arranque.
+                </li>
+
+                <li>
+                  <strong>10:00 - 11:00:</strong>
+                  Ceremonia de Inauguración.
+                </li>
+
+                <li>
+                  <strong>11:00 - 12:00:</strong>
+                  Recorrido de autoridades.
+                </li>
+
+                <li>
+                  <strong>12:15 - 13:15:</strong>
+                  Conferencia magistral.
+                </li>
+
+                <li>
+                  <strong>13:15 - 14:30:</strong>
+                  Visitas guiadas.
+                </li>
+
+                <li>
+                  <strong>16:30 - 18:30:</strong>
+                  Actividades académicas.
+                </li>
+
+                <li>
+                  <strong>18:00 - 19:00:</strong>
+                  Certamen Pitch.
+                </li>
+
+              </ul>
+
             </div>
+          </div>
+        </div>
 
-            <h1>Actividades</h1>
-            <p>
-                Talleres, conferencias, mentorías y visitas guiadas.
-            </p>
-            <hr />
+      </div>
 
-            <div class="demo-banner">
 
-                <i class="bi bi-info-circle-fill"></i>
-                <div>
-                    <strong>Contenido de demostración</strong>
-                    <span>
-                        Las actividades y horarios mostrados son ejemplos y se
-                        sustituirán por el programa oficial.
-                    </span>
-                </div>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Miércoles / Jueves
+              </h5>
+
+              <small class="text-muted">
+                07:00 AM - 22:00 PM
+              </small>
+
+              <ul class="mt-3">
+
+                <li>
+                  <strong>07:45 - 08:45:</strong>
+                  Reunión informativa con Jurado Externo.
+                </li>
+
+                <li>
+                  <strong>09:00 - 14:00:</strong>
+                  Evaluaciones en salas y stands.
+                </li>
+
+                <li>
+                  <strong>09:15 - 09:45:</strong>
+                  InnoBótica: reunión informativa.
+                </li>
+
+                <li>
+                  <strong>10:00 - 14:00:</strong>
+                  InnoBótica: evaluaciones y competencia.
+                </li>
+
+                <li>
+                  <strong>16:00 - 18:00:</strong>
+                  Evaluaciones en salas y stands.
+                </li>
+
+                <li>
+                  <strong>18:00 - 19:00:</strong>
+                  Conferencia magistral o cultural.
+                </li>
+
+                <li>
+                  <strong>19:00 - 20:00:</strong>
+                  HackaTec: protocolo de cierre.
+                </li>
+
+              </ul>
+
             </div>
-
-            <section class="sample-section">
-                <div class="sample-heading">
-                    <div>
-                        <span class="sample-kicker">
-                            PROGRAMA DE ACTIVIDADES
-                        </span>
-                        <h2>
-                            Experiencias durante el evento
-                        </h2>
-                        <p>
-                            Ejemplo visual para mostrar talleres, conferencias,
-                            recorridos y otras actividades de InnovaTecNM 2026.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="activity-list">
-                    <article class="activity-item">
-                        <div class="activity-time">
-                            <strong>09:00</strong>
-                            <span>Ejemplo</span>
-                        </div>
-                        <div class="activity-icon">
-                            <i class="bi bi-mic-fill"></i>
-                        </div>
-                        <div class="activity-copy">
-                            <span>Conferencia</span>
-                            <h3>
-                                Innovación y desarrollo tecnológico
-                            </h3>
-                            <p>
-                                Sesión de apertura con temas de innovación,
-                                emprendimiento y desarrollo de soluciones tecnológicas.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="activity-item">
-                        <div class="activity-time">
-                            <strong>11:00</strong>
-                            <span>Ejemplo</span>
-                        </div>
-                        <div class="activity-icon">
-                            <i class="bi bi-tools"></i>
-                        </div>
-                        <div class="activity-copy">
-                            <span>Taller</span>
-                            <h3>
-                                Prototipado de ideas
-                            </h3>
-                            <p>
-                                Actividad práctica para fortalecer propuestas y
-                                presentar prototipos de manera clara y atractiva.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="activity-item">
-                        <div class="activity-time">
-                            <strong>13:00</strong>
-                            <span>Ejemplo</span>
-                        </div>
-                        <div class="activity-icon">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <div class="activity-copy">
-                            <span>Mentoría</span>
-                            <h3>
-                                Asesoría para equipos participantes
-                            </h3>
-                            <p>
-                                Espacio de orientación y retroalimentación para
-                                los proyectos participantes.
-                            </p>
-                        </div>
-                    </article>
+          </div>
+        </div>
 
 
-                    <article class="activity-item">
-                        <div class="activity-time">
-                            <strong>16:00</strong>
-                            <span>Ejemplo</span>
-                        </div>
-                        <div class="activity-icon">
-                            <i class="bi bi-building"></i>
-                        </div>
-                        <div class="activity-copy">
-                            <span>Recorrido</span>
-                            <h3>
-                                Visita guiada por el campus
-                            </h3>
-                            <p>
-                                Recorrido demostrativo por espacios e instalaciones
-                                destinados a las actividades del evento.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </article>
-    </main>
+        <div class="col-md-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="card h-100 shadow-sm">
 
-    <script src="js/main.js"></script>
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Jueves / Viernes
+              </h5>
+
+              <small class="text-muted">
+                07:00 AM - 12:30 PM
+              </small>
+
+              <ul class="mt-3">
+
+                <li>
+                  <strong>07:00 - 08:30:</strong>
+                  HackaTec: protocolo de cierre.
+                </li>
+
+                <li>
+                  <strong>09:00 - 10:00:</strong>
+                  Desmontaje y retiro de proyectos.
+                </li>
+
+                <li>
+                  <strong>10:30 - 12:30:</strong>
+                  Ceremonia de Premiación y Clausura.
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+
+    
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm bg-light">
+
+            <img
+              src="img/innovatec.png"
+              class="card-img-top"
+              alt="InnovaTecNM"
+            >
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                InnovaTecNM
+              </h5>
+
+              <small class="text-muted">
+                Siempre adelante
+              </small>
+
+              <ul class="mt-3">
+
+                <li>
+                  <strong>Confía en tu talento:</strong>
+                  cada idea cuenta.
+                </li>
+
+                <li>
+                  <strong>Aprende de cada reto:</strong>
+                  los desafíos nos hacen crecer.
+                </li>
+
+                <li>
+                  <strong>Colabora y comparte:</strong>
+                  juntos logramos más.
+                </li>
+
+                <li>
+                  <strong>Disfruta el proceso:</strong>
+                  la innovación también es pasión.
+                </li>
+
+                <li>
+                  <strong>Recuerda:</strong>
+                  ¡Tu esfuerzo deja huella en InnovaTecNM!
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
