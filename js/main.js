@@ -59,3 +59,25 @@ document.addEventListener("DOMContentLoaded", () => { const c = document.getElem
   }, { threshold: .12 });
   cards.forEach(card => observer.observe(card));
 })();
+
+// Navegación interna: coloca la sección elegida justo debajo del encabezado
+(() => {
+  const links = [...document.querySelectorAll('.main-navbar .nav-link[href^="#"]')];
+  links.forEach(link => {
+    link.addEventListener('click', event => {
+      const id = link.getAttribute('href');
+      const target = document.querySelector(id);
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('.section-focus.is-target').forEach(el => el.classList.remove('is-target'));
+      if (target.classList.contains('section-focus')) {
+        target.classList.add('is-target');
+        window.setTimeout(() => target.classList.remove('is-target'), 1400);
+      }
+      const openMenu = document.querySelector('#mainMenu.show');
+      if (openMenu && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(openMenu).hide();
+      history.replaceState(null, '', id);
+    });
+  });
+})();

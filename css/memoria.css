@@ -241,3 +241,11 @@
 .activity-item:hover{transform:translateX(7px);border-color:#c8d8ea;box-shadow:0 15px 32px rgba(18,58,104,.11)}
 .sample-card-icon,.activity-icon,.section-nav-icon{transition:transform .28s ease,box-shadow .28s ease}
 @media(prefers-reduced-motion:reduce){.fx-card,.fx-card.fx-visible{opacity:1;animation:none!important}.section-nav-arrow,.section-nav-card:hover .section-nav-icon,.sample-card:hover .sample-card-icon,.activity-item:hover .activity-icon{animation:none!important}.section-nav-card::after{display:none}}
+
+
+/* Corrección de portada: evita que el encabezado fijo tape el título y mantiene el carrusel a la derecha */
+@media (min-width: 992px){
+  .memoria-hero{padding-top:190px;}
+}
+.memoria-hero .row{position:relative;z-index:1;}
+.memoria-hero .hero-intro{max-width:100%;}

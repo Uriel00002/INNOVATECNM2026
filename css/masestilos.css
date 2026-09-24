@@ -260,3 +260,126 @@
         font-size: small;
     }
 }
+/* ===== Ajustes de portada y navegación en una sola página ===== */
+.intro-destacada {
+    padding: 64px 0 28px;
+    background: linear-gradient(180deg, #f7f9fc 0%, #eef3f8 100%);
+}
+.intro-card {
+    position: relative;
+    overflow: hidden;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 56px;
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(20,57,105,.08);
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(15,39,72,.10);
+}
+.intro-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    right: -70px;
+    top: -85px;
+    background: rgba(200,155,60,.14);
+}
+.intro-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, var(--tecnm-primary), var(--tecnm-gold));
+}
+.intro-kicker {
+    display: block;
+    text-align: center;
+    color: var(--tecnm-gold);
+    font-weight: 800;
+    letter-spacing: .16em;
+    font-size: .82rem;
+    margin-bottom: 8px;
+}
+.intro-copy {
+    max-width: 980px;
+    margin: 24px auto 0;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: #35445a;
+    text-align: justify;
+}
+.intro-copy p:last-child { margin-bottom: 0; }
+
+/* Secciones tipo tarjeta como la referencia y efecto al navegar */
+.section-focus {
+    scroll-margin-top: 145px;
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 28px rgba(15,39,72,.04);
+}
+.section-focus.is-target {
+    transform: translateY(-4px);
+    border-color: rgba(200,155,60,.45);
+    box-shadow: 0 20px 48px rgba(15,39,72,.14);
+}
+.main-navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 2px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--tecnm-gold);
+}
+@media (max-width: 768px) {
+    .intro-destacada { padding: 36px 0 16px; }
+    .intro-card { padding: 34px 24px; border-radius: 18px; }
+    .intro-copy { font-size: .98rem; line-height: 1.75; text-align: left; }
+}
+
+/* Introducción integrada en la parte inferior de la portada */
+.memoria-hero .hero-intro {
+    position: relative;
+    z-index: 3;
+    margin-top: 28px;
+    padding: 22px 28px 20px 32px;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 18px;
+    border-left: 5px solid #1f447c;
+    box-shadow: 0 16px 38px rgba(22, 52, 91, 0.12);
+    display: grid;
+    grid-template-columns: minmax(230px, .7fr) minmax(0, 2fr);
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+}
+.memoria-hero .hero-intro::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -72px;
+    top: -82px;
+    border-radius: 50%;
+    background: rgba(202, 148, 43, .13);
+}
+.hero-intro-heading { border-right: 1px solid rgba(31, 68, 124, .18); padding-right: 26px; }
+.hero-intro-kicker { display:block; margin-bottom:7px; color:#c9932e; font-size:.74rem; font-weight:800; letter-spacing:.16em; }
+.hero-intro h2 { margin:0; color:#103b73; font-family:Georgia, 'Times New Roman', serif; font-size:clamp(1.75rem,3vw,2.45rem); font-weight:700; }
+.hero-intro h2::after { content:""; display:block; width:54px; height:4px; margin-top:10px; border-radius:99px; background:#c9932e; }
+.hero-intro-copy p { margin:0 0 8px; color:#263b59; font-size:.98rem; line-height:1.65; text-align:justify; }
+.hero-intro-copy p:last-child { margin-bottom:0; }
+
+@media (max-width: 991.98px) {
+  .memoria-hero .hero-intro { grid-template-columns:1fr; gap:16px; margin-top:22px; padding:22px; }
+  .hero-intro-heading { border-right:0; border-bottom:1px solid rgba(31,68,124,.14); padding:0 0 15px; }
+}
+
+/* Ajuste solicitado: introducción sin encabezado/tarjeta lateral */
+.memoria-hero .hero-intro { grid-template-columns: 1fr; }
+.hero-intro-copy { width: 100%; }
