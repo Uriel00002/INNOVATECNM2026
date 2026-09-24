@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Uriel",
+        "edad": 24,
+        "universidad": "TecNM Apizaco",
+        "carrera": "Maestriam Sistemas Computacionales"
+    },
+    {
+        "nombre": "Noe",
+        "edad": 25,
+        "universidad": "TecNM Apizaco",
+        "carrera": "Maestriam Sistemas Computacionales"
+    },
+    {
+        "nombre": "Gustavo",
+        "edad": 24,
+        "universidad": "TecNM Apizaco",
+        "carrera": "Maestriam Sistemas Computacionales"
+    },
+    {
+        "nombre": "Sebastian",
+        "edad": 30,
+        "universidad": "TecNM Apizaco",
+        "carrera": "Maestriam Sistemas Computacionales"
+    }
+]
