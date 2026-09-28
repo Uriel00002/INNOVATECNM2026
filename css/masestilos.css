@@ -178,6 +178,11 @@
         line-height: 1;
     }
 
+    .bar{
+        height: 10px;
+        background-color: wheat;
+    }
+
     .directora .name {
         font-size: small;
     }
