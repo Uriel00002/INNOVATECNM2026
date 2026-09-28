@@ -16,6 +16,11 @@
 }
 
 
+.bar{
+    background-color: red;
+    height: 130px;
+}
+
 
 
 
@@ -171,6 +176,11 @@
         margin: 1rem 1rem;
         padding: 1rem 1rem;
         line-height: 1;
+    }
+
+    .bar{
+        height: 10px;
+        background-color: wheat;
     }
 
     .directora .name {
