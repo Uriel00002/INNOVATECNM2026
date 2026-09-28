@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo - InnovaTecNM 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/masestilos.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/memoria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Estilos personalizados para la galería interactiva -->
+  <style>
+    .gallery-img {
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      object-fit: cover;
+      aspect-ratio: 16/9; /* Para que todas se vean uniformes en la miniatura */
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+      filter: brightness(0.8);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    #imageModal .modal-content {
+      background-color: transparent;
+      border: none;
+    }
+    #imageModal .btn-close {
+      background-color: white;
+      opacity: 0.8;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #imageModal .btn-close:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header fixed-top">
+    <div class="gov-bar">
+      <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+        <div class="gov-brand">GOBIERNO DE <strong>MÉXICO</strong></div>
+        <nav aria-label="Gobierno de México">
+          <a href="#">Trámites</a>
+          <a href="#">Gobierno</a>
+          <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="Navegación principal">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+          <div class="brand-mark tecnm-mark">TecNM</div>
+          <span class="brand-divider"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./acercade.html">Organigrama</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sede.html">Sede</a></li>
+            <li class="nav-item"><a class="nav-link" href="./programa.html">Programa</a></li>
+            <li class="nav-item"><a class="nav-link" href="./reuniones.html">Reuniones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./participantes.html">Participantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="./ceremonia.html">Ceremonias</a></li>
+            <li class="nav-item"><a class="nav-link" href="./desarrollo.html">Desarrollo</a></li>
+            <li class="nav-item"><a class="nav-link" href="./extra.html">Otras Actividades</a></li>
+            <li class="nav-item"><a class="nav-link" href="./visitas.html">Visita</a></li>
+            <li class="nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="bar"></div>
+  
+  <section class="contenedor my-5 pt-4">
+    <div class="comite-titulo mb-4">
+      <h2>DESARROLLO DEL INNOVATECNM </h2>
+      <div class="comite-linea"></div>
+    </div>
+    
+    <!-- Apartado 1: Certamen de Proyectos -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">Certamen de Proyectos</h3>
+        <hr>
+        <p class="mb-3"><strong>Descripción:</strong> Evaluación presencial de los proyectos inscritos en las distintas categorías (Agroindustrial, Electromovilidad, Salud, Sostenibilidad, etc.). Incluye la defensa del "Pitch" en salas de evaluación y la demostración física del prototipo en el área de stands ante el Jurado Calificador.</p>
+        
+        <h4 class="h6 mt-4 mb-3 fw-bold text-secondary"><i class="bi bi-images me-2"></i>Evidencia Fotográfica</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-1.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 1"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-2.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 2"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-3.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 3"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-4.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 4"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-5.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 5"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-6.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 6"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-7.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 7"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-8.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 8"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-9.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 9"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/certamen-10.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Certamen 10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 2: HackaTec -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;"> HackaTec</h3>
+        <hr>
+        <p class="mb-3"><strong>Descripción:</strong> Desarrollo de los retos propuestos en una jornada continua (Hackathon). Cubre el registro de equipos, trabajo en el área designada (Búnker/Gimnasio), calibración de propuestas, y la evaluación final de las soluciones tecnológicas.</p>
+        
+        <h4 class="h6 mt-4 mb-3 fw-bold text-secondary"><i class="bi bi-images me-2"></i>Evidencia Fotográfica</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-1.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 1"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-2.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 2"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-3.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 3"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-4.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 4"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-5.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 5"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-6.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 6"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-7.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 7"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-8.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 8"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-9.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 9"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/hackatec-10.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="HackaTec 10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 3: InnoBótica -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">InnoBótica</h3>
+        <hr>
+        <p class="mb-3"><strong>Descripción:</strong> Registro de las competencias en las categorías de Robots Minisumo y Seguidores de Línea. Incluye la instalación en el área de Pits, pruebas de calibración y los combates/recorridos en las pistas oficiales.</p>
+        
+        <h4 class="h6 mt-4 mb-3 fw-bold text-secondary"><i class="bi bi-images me-2"></i>Evidencia Fotográfica</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-1.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 1"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-2.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 2"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-3.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 3"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-4.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 4"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-5.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 5"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-6.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 6"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-7.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 7"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-8.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 8"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-9.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 9"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/innobotica-10.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Innobotica 10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 4: Cortometraje InnovAcción -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;"> Cortometraje InnovAcción</h3>
+        <hr>
+        <p class="mb-3"><strong>Descripción:</strong> Proyección de las producciones audiovisuales creadas por los estudiantes. Abarca la logística en las salas audiovisuales, la reproducción de los videos y la deliberación de los jueces expertos en medios.</p>
+        
+        <h4 class="h6 mt-4 mb-3 fw-bold text-secondary"><i class="bi bi-images me-2"></i>Evidencia Fotográfica</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-1.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 1"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-2.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 2"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-3.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 3"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-4.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 4"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-5.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 5"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-6.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 6"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-7.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 7"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-8.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 8"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-9.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 9"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/cortometraje-10.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Cortometraje 10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado Extra (11): Talleres, mentorías, etc. -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">Desarrollo de Talleres, Conferencias y Mentorías</h3>
+        <hr>
+        <p class="mb-3"><strong>Descripción:</strong> Evidencia de las actividades complementarias diseñadas para el desarrollo integral de los participantes, tales como conferencias magistrales, sesiones de mentoría especializada y consultorías de emprendimiento.</p>
+        
+        <h4 class="h6 mt-4 mb-3 fw-bold text-secondary"><i class="bi bi-images me-2"></i>Evidencia Fotográfica</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-1.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 1"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-2.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 2"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-3.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 3"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-4.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 4"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-5.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 5"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-6.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 6"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-7.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 7"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-8.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 8"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-9.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 9"></div>
+          <div class="col-6 col-md-4 col-lg-2 overflow-hidden rounded"><img src="img/talleres-10.jpg" class="d-block w-100 rounded gallery-img shadow-sm" alt="Taller 10"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Modal de Bootstrap para visualización de imagen en grande -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0 justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center p-0 pb-3">
+          <img src="" id="fullImage" class="img-fluid rounded shadow" alt="Vista en grande">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Script para la interacción de la galería (Lightbox) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Seleccionamos todas las imágenes de la galería
+      const images = document.querySelectorAll('.gallery-img');
+      const modalImage = document.getElementById('fullImage');
+      const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+
+      // Le asignamos el evento click a cada imagen
+      images.forEach(img => {
+        img.addEventListener('click', function () {
+          // Asignamos la ruta de la imagen clickeada al Modal
+          modalImage.src = this.src;
+          // Mostramos el modal
+          imageModal.show();
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
