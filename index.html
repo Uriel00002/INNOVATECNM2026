@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovaTecNM 2026 - Etapa Regional</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/masestilos.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/memoria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <header class="site-header fixed-top">
+    <div class="gov-bar">
+      <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+        <div class="gov-brand">GOBIERNO DE <strong>MÉXICO</strong></div>
+        <nav aria-label="Gobierno de México">
+          <a href="#">Trámites</a>
+          <a href="#">Gobierno</a>
+          <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="Navegación principal">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+          <div class="brand-mark tecnm-mark">TecNM</div>
+          <span class="brand-divider"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./acercade.html">Organigrama</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sede.html">Sede</a></li>
+            <li class="nav-item"><a class="nav-link" href="./programa.html">Programa</a></li>
+            <li class="nav-item"><a class="nav-link" href="./reuniones.html">Reuniones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./participantes.html">Participantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="./ceremonia.html">Ceremonias</a></li>
+            <li class="nav-item"><a class="nav-link" href="./desarrollo.html">Desarrollo</a></li>
+            <li class="nav-item"><a class="nav-link" href="./extra.html">Otras Actividades</a></li>
+            <li class="nav-item"><a class="nav-link" href="./visitas.html">Visita</a></li>
+            <li class="nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="memoria-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 reveal">
+            <span class="section-kicker">TecNM · Innovación tecnológica</span>
+            <div class="event-badge"><span>2026</span> Año de Margarita Maza</div>
+            <h1><br><strong>InnovaTecNM 2026</strong></h1>
+            <!--             <div class="hero-actions d-flex flex-wrap gap-3">
+              <a class="btn btn-primary-custom" href="#secciones"><i class="bi bi-grid-3x3-gap"></i> Explorar
+                secciones</a>
+              <a class="btn btn-outline-custom" href="#lineamientos"><i class="bi bi-card-checklist"></i> Ver
+                lineamientos</a>
+            </div> -->
+            <div class="hero-metrics mt-4">
+              <div><span>
+                  <p>
+                    El InnovaTecNM 2026 es un espacio de creación, colaboración e intercambio de experiencias,
+                    donde estudiantes y docentes del Tecnológico Nacional de México presentan propuestas
+                    innovadoras para responder a los retos de sectores estratégicos del país como la agroindustria,
+                    energía, salud, sostenibilidad y bienes de consumo.
+                  </p>
+                  <p>
+                    La Cumbre Nacional impulsa el talento creativo y científico con un enfoque humanista,
+                    fomentando el emprendimiento y la innovación para contribuir al desarrollo regional y nacional.
+                  </p>
+                </span></div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal delay-1">
+            <div id="heroCarousel" class="carousel slide hero-image-carousel" data-bs-ride="carousel"
+              data-bs-interval="4500">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Unidad de Posgrado e Investigación"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Apizaco"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                  aria-label="Campus del Instituto Tecnológico de Apizaco"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                  aria-label="InnovaTecNM 2026"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/carrusel-posgrado.jpg" class="d-block w-100"
+                    alt="Unidad de Posgrado e Investigación del Instituto Tecnológico de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Instituto Tecnológico de
+                      Apizaco</span><strong>Unidad de Posgrado e Investigación</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-apizaco.jpg" class="d-block w-100" alt="Letras monumentales de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Sede ·
+                      Tlaxcala</span><strong>Apizaco</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-campus.jpg" class="d-block w-100"
+                    alt="Vista aérea del Instituto Tecnológico de Apizaco">
+                  <div class="carousel-caption hero-carousel-caption"><span>Tecnológico Nacional de
+                      México</span><strong>Campus Apizaco</strong></div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/carrusel-innovatecnm.jpg" class="d-block w-100"
+                    alt="Identidad gráfica InnovaTecNM 2026">
+                  <div class="carousel-caption hero-carousel-caption"><span>Memoria Digital</span><strong>InnovaTecNM
+                      2026</strong></div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"
+                aria-label="Imagen anterior"><span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"
+                aria-label="Imagen siguiente"><span class="carousel-control-next-icon"
+                  aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="acerca">
+
+
+      <div class="mb-4 introduccion">
+        <div class="comite-titulo">
+          </span>
+          <h2>Mensaje de Bienvenida </h2>
+          <div class="comite-linea"></div>
+        </div>
+
+      </div>
+      <div id="inicio" class="discurso">
+        <div class="card mb-4">
+          <h1> Estimadas y estimados participantes</h1>
+          <div class="row">
+            <!-- Columna de la imagen -->
+            <div class="directora col-md-4 md-12">
+              <img src="img/directora.jpg" class="img-fluid rounded-start" alt="Directora">
+              <p class="name"> <strong>Dra. Yesica Imeda Savedra Benítez <br> Directora del Instituto Tecnológico de
+                  Apizaco</strong>
+              </p>
+            </div>
+            <!-- Columna del texto -->
+            <div class="col-md-8 md-12">
+              <div>
+                <p class="card-text">
+                  Es un orgullo para el Instituto Tecnológico de Apizaco recibirles y darles la más cordial bienvenida a
+                  la Cumbre Nacional de Desarrollo Tecnológico, Emprendimiento e Innovación 2026. Nos complace
+                  grandemente
+                  compartir este espacio con las instituciones que, desde distintas regiones de nuestro país,
+                  representan
+                  el talento, la creatividad y la capacidad de nuestra comunidad para imaginar, crear y transformar.
+                  Esta
+                  cumbre más que un encuentro, es un espacio donde convergen ideas que inspiran, proyectos que
+                  trascienden
+                  y personas que hacen posible la innovación. Cada propuesta, cada experiencia compartida y cada
+                  experiencia compartida y cada vínculo que aquí se construya, representa una oportunidad de seguir
+                  impulsando el desarrollo de nuestro país. Como institución sede, hemos asumido con entusiasmo y
+                  compromiso la responsabilidad de recibirles, procurando que su estancia sea una experiencia
+                  enriquecedora, cálida, memorable; pero, sobre todo, que obtengan nuevos aprendizajes, que fortalezcan
+                  alianzas y compartan el orgullo de pertenecer a la comunidad TecNM que impulsa sus talentos, que
+                  promueve la innovación y trabaja para construir un mejor futuro.
+
+                  Sean bienvenidos a su casa, nos sentimos profundamente honrados de compartir con ustedes esta gran
+                  experiencia. </p>
+                <p class="name"><strong>Sean bienvenidos a su casa, nos sentimos
+                    profundamente honrados de compartir con ustedes esta
+                    gran experiencia.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--     <section id="organizacion" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Organización </h2>
+        <div class="comite-linea"></div>
+      </div>
+      <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+          <p>Organigrama, directorio y programa general.</p>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./organizacion.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="participantes" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Participantes </h2>
+        <div class="comite-linea"></div>
+      </div>
+      <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+          <p>Estadísticas y evidencias de estudiantes, asesores y jurado.</p>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./participantes.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="eventos" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Eventos </h2>
+        <div class="comite-linea"></div>
+      </div>
+      <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+          <ul>
+            <li>Certamen de Proyectos</li>
+            <li>HackaTec</li>
+            <li>InnoBótica</li>
+            <li>Cortometraje InnovAcción</li>
+          </ul>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./eventos.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="actividades" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Actividades </h2>
+        <div class="comite-linea"></div>
+      </div>
+            <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+      <p>Talleres, conferencias, mentorías y visitas guiadas.</p>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./actividades.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ceremonias" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Ceremonias </h2>
+        <div class="comite-linea"></div>
+      </div>
+            <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+      <p>Inauguración, premiación y clausura.</p>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./ceremonias.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="contenedor">
+      <div class="comite-titulo">
+        </span>
+        <h2>Galeria y Anexos </h2>
+        <div class="comite-linea"></div>
+      </div>
+            <div class="section-data row">
+        <div class="data col-md-10 col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab placeat laborum blanditiis
+            necessitatibus quod pariatur sit, illum rem animi fuga corporis laboriosam earum inventore aperiam ipsa ut
+            esse dolor.</p>
+      <p>Crónica fotográfica, notas periodísticas y documentos oficiales.</p>
+        </div>
+        <div class="button col-md-2 col-12">
+          <a href="./galeria.html"><i class="bi bi-arrow-right icon-circle"></i></a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="contacto" id="contacto">
+      <h2>Insituto tecnologico de apizaco</h2>
+      <div class="row">
+        <div class="map col-md-7 col-12">
+          <iframe title="Mapa del Instituto Tecnológico de Apizaco"
+            src="https://www.google.com/maps?q=Instituto%20Tecnol%C3%B3gico%20de%20Apizaco&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info-contact col-md-5 md-12">
+          <div class="data">
+            <span class="contact-label">Contacto</span>
+            <h3>Estamos para servirte</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Instituto+Tecnol%C3%B3gico+de+Apizaco"
+              target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i><span>Av. Instituto
+                Tecnológico
+                No. 418, San Andrés Ahuashuatepec, Tzompantepec, Tlaxcala, C.P. 90491</span></a>
+            <br>
+            <a href="tel:+522414172010"><i class="bi bi-telephone-fill"></i><span>(241) 417 2010</span></a>
+            <br>
+            <a href="mailto:difusion@apizaco.tecnm.mx"><i
+                class="bi bi-envelope-fill"></i><span>difusion@apizaco.tecnm.mx</span></a>
+            <br>
+            <a href="https://www.apizaco.tecnm.mx/" target="_blank" rel="noopener noreferrer"><i
+                class="bi bi-globe2"></i><span>Portal oficial TecNM Campus Apizaco</span></a>
+          </div>
+          <div class="social-block">
+            <span>Síguenos en canales oficiales</span>
+            <div class="social-links">
+              <a href="https://www.facebook.com/TecApizaco/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook TecApizaco"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/tecapizaco/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram TecApizaco"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@tecnmapizaco" target="_blank" rel="noopener noreferrer"
+                aria-label="TikTok TecNM Apizaco"><i class="bi bi-tiktok"></i></a>
+              <a href="https://x.com/web_itapizaco" target="_blank" rel="noopener noreferrer"
+                aria-label="X TecApizaco"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/channel/UCQFRRxwrzpcGX_gMWklp99g" target="_blank"
+                rel="noopener noreferrer" aria-label="YouTube Instituto Tecnológico de Apizaco"><i
+                  class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer>
+    <p>© 2026 Tecnológico Nacional de México Campus Apizaco. Todos los derechos reservados.</p>
+    <p>Fecha de última actualización: 8 de septiembre de 2026</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

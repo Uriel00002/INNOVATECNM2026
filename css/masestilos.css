@@ -1,0 +1,492 @@
+.contenedor {
+    background-color: rgb(255, 254, 254);
+    margin: 3rem 3rem;
+    padding: 2rem 2rem;
+    line-height: 1.8;
+    color: #222;
+    border-radius: 10px;
+}
+
+.discurso {
+    padding: 0 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #222;
+}
+
+
+.bar{
+    background-color: red;
+    height: 130px;
+}
+
+
+
+.sede{
+    background-color: orangered;
+}
+
+.contacto {
+    background-color: var(--tecnm-primary);
+    padding: 30px 60px;
+    color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.contacto .map {
+    align-content: center;
+    border-radius: 15px;
+}
+
+.contacto .map iframe {
+    width: 70%;
+    height: 70%;
+    padding: 0;
+    border-radius: 15px;
+}
+
+
+.contacto .info-contact .data i {
+    color: var(--tecnm-gold);
+}
+
+.contacto .info-contact .data a {}
+
+.contacto .info-contact a {
+    color: white;
+    margin: 5px 10px;
+}
+
+.section-data .data {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+}
+
+.section-data .button {
+    text-align: center;
+    align-content: center;
+}
+
+
+.section-data .button i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--tecnm-primary);
+    color: var(--tecnm-gold);
+    font-size: 1.2rem;
+}
+
+.section-data .button i:hover {
+    background-color: var(--tecnm-gold);
+    color: var(--tecnm-primary);
+}
+
+/* Contenedor principal */
+.info-contact {
+    background-color: var(--tecnm-primary-dark);
+    /* azul oscuro */
+    color: #f1f1f1;
+    /* texto claro */
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Etiqueta superior (Contacto) */
+.contact-label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d4b25f;
+    /* dorado suave */
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+/* Título principal */
+.info-contact h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bloque de datos */
+.data a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+.data a:hover {
+    color: #d4b25f;
+}
+
+/* Íconos */
+.data i {
+    font-size: 1.3rem;
+}
+
+/* Línea divisoria */
+.data a+br+a {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 0.8rem;
+}
+
+/* Bloque de redes sociales */
+.social-block {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-block span {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+    font-size: 1.4rem;
+    margin: 0 0.4rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #d4b25f;
+    color: #1e2a47;
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        margin: 1rem 1rem;
+        padding: 1rem 1rem;
+        line-height: 1;
+    }
+
+    .bar{
+        height: 10px;
+        background-color: wheat;
+    }
+
+    .directora .name {
+        font-size: small;
+    }
+
+    .name {
+        font-size: small;
+    }
+
+    .comite-titulo h2 {
+        font-size: small;
+    }
+
+    .introduccion h2 {
+        font-size: small;
+    }
+
+    .introduccion p {
+        font-size: x-small;
+    }
+
+    .discurso {
+        margin: 0 20px;
+        padding: 2px;
+    }
+
+    .discurso h1 {
+        font-size: medium;
+    }
+
+    .discurso .card-text {
+        font-size: x-small;
+    }
+
+    .discurso .directora {
+        text-align: center;
+    }
+
+
+    .discurso .card-text p strong {
+        font-size: small;
+    }
+
+    .section-data .data {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacto .map {
+        padding: 0;
+    }
+
+    .contacto .map iframe {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .info-contact {
+        width: 100%;
+        /* el contenedor usa todo el ancho disponible */
+        padding: 1.5rem;
+        /* reduce el padding para que no se vea tan grande */
+        border-radius: 15px;
+        /* opcional: elimina bordes redondeados si quieres que ocupe todo */
+    }
+
+    .info-contact h3 {
+        font-size: 1.4rem;
+        /* texto del título más pequeño */
+    }
+
+    .data a {
+        font-size: 0.9rem;
+        /* texto general más compacto */
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        /* íconos ligeramente más pequeños */
+        margin: 0 0.3rem;
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+/* =========================================================
+   SECCIÓN PARTICIPANTES
+   ========================================================= */
+
+.participantes-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+}
+
+.participantes-titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.participantes-titulo h2 {
+    color: var(--tecnm-primary);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.comite-linea {
+    width: 80px;
+    height: 4px;
+    background: var(--tecnm-gold);
+    margin: 0 auto 1.5rem;
+    border-radius: 10px;
+}
+
+.participantes-intro {
+    max-width: 900px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* =========================================================
+   TARJETAS DE TABLAS
+   ========================================================= */
+
+.tabla-participantes {
+    background: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tabla-participantes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   ENCABEZADO DE CADA TABLA
+   ========================================================= */
+
+.tabla-participantes-titulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.3rem 1.5rem;
+    background: var(--tecnm-primary);
+    color: #ffffff;
+}
+
+.tabla-participantes-titulo h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.tabla-icono {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--tecnm-gold);
+    color: var(--tecnm-primary);
+    font-size: 1.3rem;
+}
+
+
+/* =========================================================
+   TABLAS
+   ========================================================= */
+
+.tabla-innova {
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.tabla-innova thead th {
+    background: #f5f6f8;
+    color: var(--tecnm-primary-dark);
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.tabla-innova tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    color: #444;
+}
+
+.tabla-innova tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.tabla-innova tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.columna-ver {
+    width: 120px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   BOTÓN VER
+   ========================================================= */
+
+.btn-ver-tabla {
+    border: none;
+    background: var(--tecnm-primary);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.btn-ver-tabla:hover {
+    background: var(--tecnm-gold);
+    color: var(--tecnm-primary-dark);
+}
+
+.btn-ver-tabla i {
+    transition: transform 0.3s ease;
+}
+
+.btn-ver-tabla[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   FILAS OCULTAS
+   ========================================================= */
+
+.contenido-oculto {
+    display: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .participantes-section {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .participantes-titulo h2 {
+        font-size: 1.4rem;
+    }
+
+    .participantes-intro {
+        font-size: 0.9rem;
+    }
+
+    .tabla-participantes-titulo {
+        padding: 1rem;
+    }
+
+    .tabla-participantes-titulo h3 {
+        font-size: 1rem;
+    }
+
+    .tabla-icono {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .tabla-innova {
+        font-size: 0.85rem;
+    }
+
+    .btn-ver-tabla {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}

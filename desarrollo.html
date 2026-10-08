@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo - InnovaTecNM 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/masestilos.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/memoria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Estilos personalizados para las tarjetas interactivas (Flip Cards) -->
+  <style>
+    /* Contenedor de la tarjeta 3D */
+    .cardBox {
+      perspective: 1000px;
+      height: 220px; /* Altura uniforme para todas las tarjetas */
+      margin-bottom: 15px;
+    }
+
+    /* La carta en sí que rotará */
+    .carta {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    /* Efecto hover: Voltea la tarjeta */
+    .cardBox:hover .carta {
+      transform: rotateY(180deg);
+    }
+
+    /* Lados frontal y trasero */
+    .front, .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Ajuste de imagen en el frente */
+    .front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Estilos de la parte trasera */
+    .back {
+      background-color: #1b396a; /* Azul institucional TecNM */
+      color: #ffffff;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .back h5 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #d4a359; /* Dorado acento */
+    }
+
+    .back p {
+      font-size: 0.85rem;
+      margin: 0;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header fixed-top">
+    <div class="gov-bar">
+      <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+        <div class="gov-brand">GOBIERNO DE <strong>MÉXICO</strong></div>
+        <nav aria-label="Gobierno de México">
+          <a href="#">Trámites</a>
+          <a href="#">Gobierno</a>
+          <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="Navegación principal">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+          <div class="brand-mark tecnm-mark">TecNM</div>
+          <span class="brand-divider"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./acercade.html">Organigrama</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sede.html">Sede</a></li>
+            <li class="nav-item"><a class="nav-link" href="./programa.html">Programa</a></li>
+            <li class="nav-item"><a class="nav-link" href="./reuniones.html">Reuniones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./participantes.html">Participantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="./ceremonia.html">Ceremonias</a></li>
+            <li class="nav-item"><a class="nav-link" href="./desarrollo.html">Desarrollo</a></li>
+            <li class="nav-item"><a class="nav-link" href="./extra.html">Otras Actividades</a></li>
+            <li class="nav-item"><a class="nav-link" href="./visitas.html">Visita</a></li>
+            <li class="nav-item"><a class="nav-link" href="./galeria.html">Galeria</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="bar"></div>
+  
+  <section class="contenedor my-5 pt-4">
+    <div class="comite-titulo mb-4">
+      <h2>DESARROLLO DEL INNOVATECNM </h2>
+      <div class="comite-linea"></div>
+    </div>
+    
+    <!-- Apartado 1: Certamen de Proyectos -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">Certamen de Proyectos</h3>
+        <hr>
+        <p class="mb-4"><strong>Descripción:</strong> Evaluación presencial de los proyectos inscritos en las distintas categorías (Agroindustrial, Electromovilidad, Salud, Sostenibilidad, etc.). Incluye la defensa del "Pitch" en salas de evaluación y la demostración física del prototipo en el área de stands ante el Jurado Calificador.</p>
+        
+        <div class="row g-3">
+          <!-- Carta 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/certamen-1.jpg" alt="Evaluación en Sala"></div>
+                <div class="back">
+                  <h5>Evaluación</h5>
+                  <p>Presentación frente al jurado experto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carta 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/certamen-2.jpg" alt="Defensa de Pitch"></div>
+                <div class="back">
+                  <h5>Defensa </h5>
+                  <p>Exposición de modelo de negocios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carta 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/certamen-3.jpg" alt="Área de Stands"></div>
+                <div class="back">
+                  <h5>Exposición</h5>
+                  <p>Corta Presentación del proyecto </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carta 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/certamen-4.jpg" alt="Prototipo"></div>
+                <div class="back">
+                  <h5>Prototipo</h5>
+                  <p>Validación técnica del funcionamiento.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 2: HackaTec -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;"> HackaTec</h3>
+        <hr>
+        <p class="mb-4"><strong>Descripción:</strong> Desarrollo de los retos propuestos en una jornada continua (Hackathon). Cubre el registro de equipos, trabajo en el área designada (Búnker/Gimnasio), calibración de propuestas, y la evaluación final de las soluciones tecnológicas.</p>
+        
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/hackatec-1.jpg" alt="Registro HackaTec"></div>
+                <div class="back">
+                  <h5>El Búnker</h5>
+                  <p>Área de trabajo ininterrumpido.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/hackatec-2.jpg" alt="Trabajo en equipo"></div>
+                <div class="back">
+                  <h5>Desarrollo</h5>
+                  <p>Programación de soluciones tecnológicas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/hackatec-3.jpg" alt="Mentoría HackaTec"></div>
+                <div class="back">
+                  <h5>Mentoría</h5>
+                  <p>Asesoría experta durante el reto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/hackatec-4.jpg" alt="Pitch HackaTec"></div>
+                <div class="back">
+                  <h5>Evaluación Final</h5>
+                  <p>Presentación de la solución final.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 3: InnoBótica -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">InnoBótica</h3>
+        <hr>
+        <p class="mb-4"><strong>Descripción:</strong> Registro de las competencias en las categorías de Robots Minisumo y Seguidores de Línea. Incluye la instalación en el área de Pits, pruebas de calibración y los combates/recorridos en las pistas oficiales.</p>
+        
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/innobotica-1.jpg" alt="Robots Minisumo"></div>
+                <div class="back">
+                  <h5>Minisumo</h5>
+                  <p>Encuentros en el Dohyo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/innobotica-2.jpg" alt="Seguidor de Línea"></div>
+                <div class="back">
+                  <h5>Seguidor de Línea</h5>
+                  <p>Pruebas de velocidad y precisión.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/innobotica-3.jpg" alt="Pits InnoBótica"></div>
+                <div class="back">
+                  <h5>Área de Pits</h5>
+                  <p>Calibración y ajustes técnicos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/innobotica-4.jpg" alt="Combate Final"></div>
+                <div class="back">
+                  <h5>Finales</h5>
+                  <p>Rondas definitivas de competencia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado 4: Cortometraje InnovAcción -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;"> Cortometraje InnovAcción</h3>
+        <hr>
+        <p class="mb-4"><strong>Descripción:</strong> Proyección de las producciones audiovisuales creadas por los estudiantes. Abarca la logística en las salas audiovisuales, la reproducción de los videos y la deliberación de los jueces expertos en medios.</p>
+        
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/cortometraje-1.jpg" alt="Producción"></div>
+                <div class="back">
+                  <h5>Producción</h5>
+                  <p>Detrás de cámaras de los proyectos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/cortometraje-2.jpg" alt="Salas de Proyección"></div>
+                <div class="back">
+                  <h5>Proyección</h5>
+                  <p>Exhibición en sala audiovisual.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/cortometraje-3.jpg" alt="Directores"></div>
+                <div class="back">
+                  <h5>Expositores</h5>
+                  <p>Palabras de los directores creativos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/cortometraje-4.jpg" alt="Jueces"></div>
+                <div class="back">
+                  <h5>Deliberación</h5>
+                  <p>Evaluación técnica y narrativa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado Extra (11): Talleres, mentorías, etc. -->
+    <div class="card mb-4 shadow-sm border-0 bg-light">
+      <div class="card-body p-4">
+        <h3 class="h5" style="color: #1b396a; font-weight: 700;">Pitch</h3>
+        <hr>
+        <p class="mb-4"><strong>Descripción:</strong> Se evalua la capacidad del estudiante de comunicar de forma clara el problema que resuelve, la solución propuesta, el mercado obetivo, la tecnología utilizada y su modelo de negocio.</p>
+        
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/pitch-1.jpeg" alt="Conferencia Magistral"></div>
+                <div class="back">
+                  <h5>Exposición</h5>
+                  <p>Explicación de la problemática y propuesta de valor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/pitch-2.jpeg" alt="Taller Práctico"></div>
+                <div class="back">
+                  <h5>Exposición</h5>
+                  <p>Sesiones prácticas de aprendizaje.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/pitch-3.jpeg" alt="Networking"></div>
+                <div class="back">
+                  <h5>Sala de trabajo / Aula</h5>
+                  <p>Presentación individual en espacios de evaluación habilitados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="cardBox">
+              <div class="carta">
+                <div class="front"><img src="img/pitch-4.jpeg" alt="Consultoría"></div>
+                <div class="back">
+                  <h5>Estudiante frente al jurado calificador</h5>
+                  <p>Evaluación ante jurado: Sesión de preguntas y defensa técnica del modelo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
