@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/memoria.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/galerias-participantes.css">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
     </nav>
   </header>
 
-  <div class="bar"></div>
+   <div class="bar"></div>
 
   <section class="contenedor participantes-section" id="participantes">
 
@@ -85,185 +86,55 @@
       Consulta la información de los participantes de InnovaTecNM 2026 por categoría.
     </p>
 
-    <!-- ESTUDIANTES -->
-    <div class="tabla-participantes">
-      <div class="tabla-participantes-titulo">
-        <div class="tabla-icono"><i class="bi bi-mortarboard-fill"></i></div>
-        <div><span>PARTICIPANTES</span><h3>Estudiantes</h3></div>
-      </div>
 
-      <div class="table-responsive">
-        <table class="table tabla-innova">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Estudiante</th>
-              <th>Participación</th>
-              <th class="columna-ver">
-                <button class="btn-ver-tabla" type="button" data-tabla="estudiantes" aria-expanded="false">
-                  <span class="texto-ver">Ver</span> <i class="bi bi-chevron-down"></i>
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody id="estudiantes" class="contenido-oculto">
-            <tr>
-              <td>01</td>
-              <td><i class="bi bi-person-circle me-2"></i>Estudiante Ejemplo 01</td>
-              <td>Proyecto de Innovación</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td><i class="bi bi-person-circle me-2"></i>Estudiante Ejemplo 02</td>
-              <td>Proyecto de Innovación</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td><i class="bi bi-person-circle me-2"></i>Estudiante Ejemplo 03</td>
-              <td>Proyecto de Innovación</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
 
-    <!-- DOCENTES ASESORES -->
-    <div class="tabla-participantes">
-      <div class="tabla-participantes-titulo">
-        <div class="tabla-icono"><i class="bi bi-person-workspace"></i></div>
-        <div><span>PARTICIPANTES</span><h3>Docentes Asesores</h3></div>
+    <!-- GALERÍAS DE PARTICIPANTES: RECEPCIÓN Y STANDS -->
+    <section class="galeria-participantes" aria-labelledby="titulo-galeria-recepcion">
+      <div class="galeria-participantes-cabecera">
+        <span class="galeria-participantes-icono" aria-hidden="true"><i class="bi bi-camera-fill"></i></span>
+        <div><small>PARTICIPANTES</small><h3 id="titulo-galeria-recepcion">Recepción</h3></div>
       </div>
+      <div class="galeria-participantes-control">
+        <strong>Galería fotográfica · 13 imágenes</strong><span class="galeria-participantes-indicacion">Pasa el cursor o toca una imagen para girarla</span>
+        <button class="galeria-participantes-boton" type="button"
+          data-galeria="galeria-recepcion" aria-controls="galeria-recepcion" aria-expanded="false">
+          <span class="galeria-participantes-texto">Ver</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="galeria-recepcion" class="galeria-participantes-grid" hidden></div>
+    </section>
 
-      <div class="table-responsive">
-        <table class="table tabla-innova">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Docente</th>
-              <th>Función</th>
-              <th class="columna-ver">
-                <button class="btn-ver-tabla" type="button" data-tabla="docentes" aria-expanded="false">
-                  <span class="texto-ver">Ver</span> <i class="bi bi-chevron-down"></i>
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody id="docentes" class="contenido-oculto">
-            <tr>
-              <td>01</td>
-              <td><i class="bi bi-person-badge me-2"></i>Docente Asesor 01</td>
-              <td>Asesor de proyecto</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td><i class="bi bi-person-badge me-2"></i>Docente Asesor 02</td>
-              <td>Asesor de proyecto</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td><i class="bi bi-person-badge me-2"></i>Docente Asesor 03</td>
-              <td>Asesor de proyecto</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="galeria-participantes" aria-labelledby="titulo-galeria-stands">
+      <div class="galeria-participantes-cabecera">
+        <span class="galeria-participantes-icono" aria-hidden="true"><i class="bi bi-images"></i></span>
+        <div><small>PARTICIPANTES</small><h3 id="titulo-galeria-stands">Stands y Evaluaciones</h3></div>
       </div>
-    </div>
+      <div class="galeria-participantes-control">
+        <strong>Galería fotográfica · 124 imágenes</strong><span class="galeria-participantes-indicacion">Pasa el cursor o toca una imagen para girarla</span>
+        <button class="galeria-participantes-boton" type="button"
+          data-galeria="galeria-stands" aria-controls="galeria-stands" aria-expanded="false">
+          <span class="galeria-participantes-texto">Ver</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="galeria-stands" class="galeria-participantes-grid" hidden></div>
+    </section>
 
-    <!-- EQUIPO MODERADOR -->
-    <div class="tabla-participantes">
-      <div class="tabla-participantes-titulo">
-        <div class="tabla-icono"><i class="bi bi-people-fill"></i></div>
-        <div><span>PARTICIPANTES</span><h3>Equipo Moderador</h3></div>
+    <!-- GALERÍA ADICIONAL: STANDS DÍA 2 -->
+    <section class="galeria-participantes" aria-labelledby="titulo-galeria-stands-dia2">
+      <div class="galeria-participantes-cabecera">
+        <span class="galeria-participantes-icono" aria-hidden="true"><i class="bi bi-camera-reels-fill"></i></span>
+        <div><small>PARTICIPANTES</small><h3 id="titulo-galeria-stands-dia2">Stands Día 2</h3></div>
       </div>
+      <div class="galeria-participantes-control">
+        <strong>Galería fotográfica · 109 imágenes</strong><span class="galeria-participantes-indicacion">Pasa el cursor o toca una imagen para girarla</span>
+        <button class="galeria-participantes-boton" type="button"
+          data-galeria="galeria-stands-dia2" aria-controls="galeria-stands-dia2" aria-expanded="false">
+          <span class="galeria-participantes-texto">Ver</span> <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="galeria-stands-dia2" class="galeria-participantes-grid" hidden></div>
+    </section>
 
-      <div class="table-responsive">
-        <table class="table tabla-innova">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Moderador</th>
-              <th>Función</th>
-              <th class="columna-ver">
-                <button class="btn-ver-tabla" type="button" data-tabla="moderadores" aria-expanded="false">
-                  <span class="texto-ver">Ver</span> <i class="bi bi-chevron-down"></i>
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody id="moderadores" class="contenido-oculto">
-            <tr>
-              <td>01</td>
-              <td><i class="bi bi-person-circle me-2"></i>Moderador 01</td>
-              <td>Coordinación de actividades</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td><i class="bi bi-person-circle me-2"></i>Moderador 02</td>
-              <td>Coordinación de actividades</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td><i class="bi bi-person-circle me-2"></i>Moderador 03</td>
-              <td>Coordinación de actividades</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- JURADO CALIFICADOR -->
-    <div class="tabla-participantes">
-      <div class="tabla-participantes-titulo">
-        <div class="tabla-icono"><i class="bi bi-award-fill"></i></div>
-        <div><span>PARTICIPANTES</span><h3>Jurado Calificador</h3></div>
-      </div>
-
-      <div class="table-responsive">
-        <table class="table tabla-innova">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Jurado</th>
-              <th>Función</th>
-              <th class="columna-ver">
-                <button class="btn-ver-tabla" type="button" data-tabla="jurado" aria-expanded="false">
-                  <span class="texto-ver">Ver</span> <i class="bi bi-chevron-down"></i>
-                </button>
-              </th>
-            </tr>
-          </thead>
-          <tbody id="jurado" class="contenido-oculto">
-            <tr>
-              <td>01</td>
-              <td><i class="bi bi-award me-2"></i>Jurado 01</td>
-              <td>Evaluador</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td><i class="bi bi-award me-2"></i>Jurado 02</td>
-              <td>Evaluador</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td><i class="bi bi-award me-2"></i>Jurado 03</td>
-              <td>Evaluador</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
 
   </section>
 
@@ -281,6 +152,373 @@
           boton.classList.toggle("activo", abrir);
           boton.setAttribute("aria-expanded", abrir ? "true" : "false");
           boton.querySelector(".texto-ver").textContent = abrir ? "Ocultar" : "Ver";
+        });
+      });
+    });
+  </script>
+
+  <script>
+    // Galerías independientes de las tablas existentes de participantes.
+    document.addEventListener("DOMContentLoaded", function () {
+      // Descripciones breves revisadas para cada fotografía.
+      const descripciones = {
+        "recepcion": [
+                "Participantes en un módulo de exhibición.",
+                "Llegada de asistentes a la sede del evento.",
+                "Registro de participantes en la mesa de atención.",
+                "Personal de recepción atiende a los asistentes.",
+                "Participantes realizan su registro de ingreso.",
+                "Asistentes esperan atención en el área de registro.",
+                "Entrega de información durante el registro.",
+                "Personal orienta a los participantes en recepción.",
+                "Registro y atención de asistentes al evento.",
+                "Preparación de materiales en un stand participante.",
+                "Stand de proyecto con decoración verde.",
+                "Presentación de productos en un módulo de exhibición.",
+                "Stand decorado para mostrar materiales del proyecto."
+        ],
+        "stands": [
+                "Revisión de documentos en un stand de proyecto.",
+                "Visitantes recorren los espacios de exhibición.",
+                "Evaluadores observan una presentación de proyecto.",
+                "Expositores explican su propuesta a los visitantes.",
+                "Presentación de información en un stand tecnológico.",
+                "Demostración de un proyecto frente a evaluadores.",
+                "Recorrido de asistentes por los proyectos expuestos.",
+                "Expositor muestra materiales en una mesa de trabajo.",
+                "Diálogo entre evaluador y equipo participante.",
+                "Revisión de productos en un stand ecológico.",
+                "Presentación de prototipos y material informativo.",
+                "Equipo explica su proyecto en el módulo verde.",
+                "Visita de evaluadores al espacio de exhibición.",
+                "Estudiantes atienden preguntas sobre su propuesta.",
+                "Evaluadora conversa con los participantes del stand.",
+                "Expositor muestra un material durante la explicación.",
+                "Evaluadores revisan la información del proyecto.",
+                "Equipo participante responde preguntas en su stand.",
+                "Asistentes circulan entre módulos del evento.",
+                "Revisión de información durante una evaluación.",
+                "Evaluadores escuchan las explicaciones del equipo.",
+                "Intercambio de ideas frente a un stand académico.",
+                "Público conoce los proyectos de la exhibición.",
+                "Presentación de un proyecto ante varios visitantes.",
+                "Evaluadores observan la demostración del equipo.",
+                "Revisión de documentos y muestras del proyecto.",
+                "Evaluadores examinan una propuesta de innovación.",
+                "Participantes explican sus productos y resultados.",
+                "Recorrido de evaluación entre stands participantes.",
+                "Presentación de muestras a un grupo de evaluadores.",
+                "Integrantes del equipo explican su propuesta.",
+                "Demostración del proyecto ante una visitante.",
+                "Presentación grupal en un stand decorado de verde.",
+                "Expositores muestran materiales durante la evaluación.",
+                "Visitantes conocen una propuesta de productos naturales.",
+                "Expositor explica los beneficios de su proyecto.",
+                "Estudiantes atienden las preguntas de evaluadores.",
+                "Presentación de la propuesta frente al jurado.",
+                "Evaluación de productos mostrados sobre la mesa.",
+                "Fotografía del equipo participante en su stand.",
+                "Equipo posa frente a la presentación del proyecto.",
+                "Integrantes del proyecto muestran su stand al público.",
+                "Revisión de un equipo durante la demostración.",
+                "Visitantes observan un prototipo tecnológico.",
+                "Evaluadores se reúnen frente a un proyecto decorado.",
+                "Explicación de una propuesta ante los visitantes.",
+                "Participantes dialogan con el jurado evaluador.",
+                "Revisión de materiales y resultados del proyecto.",
+                "Presentación de una propuesta frente a evaluadores.",
+                "Recorrido por stands con demostraciones de proyectos.",
+                "Expositor explica el proyecto y sus productos.",
+                "Evaluadores observan los materiales presentados.",
+                "Lectura de documentos durante la revisión del proyecto.",
+                "Equipo muestra su trabajo frente a un panel verde.",
+                "Participantes presentan su propuesta en el stand.",
+                "Exposición de productos a visitantes y evaluadores.",
+                "Asistentes revisan la demostración de un proyecto.",
+                "Evaluadores analizan las muestras del equipo.",
+                "Presentación de prototipos sobre una mesa.",
+                "Visitantes conocen un proyecto con decoración vegetal.",
+                "Expositor explica las características de su propuesta.",
+                "Demostración tecnológica ante un grupo de visitantes.",
+                "Presentación de productos de origen natural.",
+                "Un estudiante explica su proyecto a evaluadores.",
+                "Preguntas del jurado durante la exposición.",
+                "Equipo presenta su propuesta de aprovechamiento de recursos.",
+                "Participantes explican los resultados de su proyecto.",
+                "Expositores atienden dudas sobre su investigación.",
+                "Demostración de productos durante la evaluación.",
+                "Equipo muestra materiales informativos de su propuesta.",
+                "Presentación del proyecto junto a sus carteles.",
+                "Visitantes escuchan al equipo expositor.",
+                "Presentación de productos en un módulo temático.",
+                "Conversación sobre muestras exhibidas en el stand.",
+                "Evaluadores dialogan con los participantes del proyecto.",
+                "Intercambio de comentarios durante la revisión.",
+                "Asistentes recorren el área de stands.",
+                "Reunión de visitantes frente a un módulo tecnológico.",
+                "Equipo explica su solución a los evaluadores.",
+                "Presentación de la propuesta en una mesa azul.",
+                "Exhibición de un prototipo construido en madera.",
+                "Integrantes del equipo frente a su prototipo.",
+                "Demostración de un dispositivo ante visitantes.",
+                "Evaluadores analizan el funcionamiento de una maqueta.",
+                "Participante muestra un dispositivo de su proyecto.",
+                "Revisión de documentos en el stand tecnológico.",
+                "Equipo exhibe su propuesta de tecnología aplicada.",
+                "Expositores atienden al público en un módulo verde.",
+                "Evaluador revisa los productos presentados.",
+                "Detalle de una prueba realizada en el suelo.",
+                "Visitantes conocen propuestas en el pasillo de stands.",
+                "Participantes explican materiales de su exhibición.",
+                "Presentación de un producto a un grupo visitante.",
+                "Equipo muestra una propuesta sobre cuidado ambiental.",
+                "Evaluación de una demostración en el stand.",
+                "Expositor atiende preguntas sobre su propuesta.",
+                "Participantes revisan apuntes durante la visita.",
+                "Evaluadores observan productos y materiales naturales.",
+                "Exhibición de artículos preparados por el equipo.",
+                "Presentación de productos en un stand de innovación.",
+                "Evaluación de una propuesta con carteles informativos.",
+                "Asistentes observan demostraciones en varios módulos.",
+                "Estudiante presenta los avances de su proyecto.",
+                "Equipo explica una propuesta tecnológica.",
+                "Expositores muestran prototipos ante los visitantes.",
+                "Evaluadores revisan una mesa con dispositivos.",
+                "Presentación de un proyecto con material gráfico.",
+                "Equipo muestra los resultados de su trabajo.",
+                "Evaluadores consultan información de la propuesta.",
+                "Recorrido por los stands y sus exhibiciones.",
+                "Participantes explican sus productos al jurado.",
+                "Integrantes del equipo muestran una maqueta.",
+                "Expositora describe un dispositivo de su proyecto.",
+                "Demostración de tecnología durante una evaluación.",
+                "Evaluadores conocen una propuesta innovadora.",
+                "Diálogo con el equipo durante el recorrido.",
+                "Revisión de materiales frente a un stand.",
+                "Visitantes observan una presentación tecnológica.",
+                "Presentación de prototipos con iluminación azul.",
+                "Equipo explica su proyecto al jurado.",
+                "Expositor muestra pantallas y material informativo.",
+                "Demostración ante un grupo de evaluadores.",
+                "Integrante del equipo presenta sus resultados.",
+                "Evaluadores dialogan con los expositores.",
+                "Presentación de productos a un grupo visitante.",
+                "Expositor atiende al público desde su módulo.",
+                "Equipo muestra dispositivos en la mesa del stand.",
+                "Intercambio de información durante la evaluación.",
+                "Presentación de un equipo y su proyecto tecnológico.",
+                "Evaluadores revisan el prototipo del equipo.",
+                "Integrantes explican el uso de sus dispositivos.",
+                "Demostración de una solución ante visitantes.",
+                "Expositora presenta muestras en su mesa.",
+                "Exposición de productos artesanales o elaborados.",
+                "Evaluadores recorren el stand con prototipos.",
+                "Presentación final de materiales del proyecto.",
+                "Participantes conversan al aire libre del evento.",
+                "Equipo muestra su proyecto a visitantes del evento."
+        ],
+        "dia2": [
+                "Equipo presenta el proyecto VitaTrack en su stand.",
+                "Integrantes del equipo posan frente a su proyecto.",
+                "Stand con maqueta y material de AgroClima.",
+                "Equipo de S.I.R.A. muestra su propuesta.",
+                "Dos participantes presentan su módulo de innovación.",
+                "Equipo muestra una maqueta en su espacio de exhibición.",
+                "Integrantes posan junto a su prototipo.",
+                "Equipo presenta su proyecto MESUA.",
+                "Participantes exhiben productos con decoración vegetal.",
+                "Equipo muestra productos y muestras de su propuesta.",
+                "Integrantes posan frente a un stand decorado de verde.",
+                "Estudiantes presentan su proyecto detrás de una mesa.",
+                "Equipo muestra el material y prototipo de su propuesta.",
+                "Participantes exhiben productos en un módulo temático.",
+                "Equipo del proyecto UAKAX frente a su stand.",
+                "Stand con materiales y productos de exhibición.",
+                "Participantes muestran artículos y muestras elaboradas.",
+                "Equipo posa frente a su exposición decorada.",
+                "Presentación de productos sobre una mesa de exhibición.",
+                "Equipo muestra su propuesta Natural Film.",
+                "Expositores junto a los materiales de su proyecto.",
+                "Integrantes presentan productos en un stand con plantas.",
+                "Equipo muestra productos elaborados en su proyecto.",
+                "Participantes frente a equipos y material de exhibición.",
+                "Integrantes posan en su módulo decorado.",
+                "Equipo de Solar Energy presenta sus materiales.",
+                "Presentación de un prototipo en un stand azul.",
+                "Estudiantes muestran un dispositivo de su proyecto.",
+                "Equipo presenta muestras y productos empacados.",
+                "Participantes exhiben prototipos en su stand.",
+                "Equipo muestra el proyecto en una mesa decorada.",
+                "Expositores frente a un módulo de energía solar.",
+                "Integrantes presentan productos en un stand naranja.",
+                "Equipo expone su proyecto SolarGo.",
+                "Participantes muestran su propuesta con computadoras.",
+                "Equipo posa frente a un prototipo de reutilización.",
+                "Expositor junto a un proyecto con componentes mecánicos.",
+                "Estudiantes presentan una maqueta tecnológica.",
+                "Equipo frente a una muestra de dispositivos.",
+                "Integrantes muestran su proyecto con equipo de cómputo.",
+                "Presentación de productos en una mesa azul.",
+                "Expositores presentan una propuesta en su módulo.",
+                "Equipo posa frente a una maqueta tecnológica.",
+                "Participantes muestran su propuesta de productos.",
+                "Integrantes frente a prototipos y carteles informativos.",
+                "Equipo explica su proyecto de tecnología aplicada.",
+                "Presentación de materiales en una mesa amarilla.",
+                "Participantes exhiben una propuesta ThermoGuard.",
+                "Equipo muestra un prototipo en su stand.",
+                "Integrantes presentan sus productos en una mesa azul.",
+                "Participantes frente al proyecto Warrior Kids.",
+                "Equipo muestra resultados y carteles del proyecto.",
+                "Integrantes posan con muestras de su propuesta.",
+                "Equipo participante junto a equipo de cómputo.",
+                "Expositor presenta un dispositivo en su módulo.",
+                "Participantes frente a una exhibición tecnológica.",
+                "Equipo muestra sus materiales y un trofeo de muestra.",
+                "Integrantes presentan productos sobre una mesa verde.",
+                "Participantes muestran artículos de su proyecto.",
+                "Equipo posa ante una exposición con decoración verde.",
+                "Expositora presenta su propuesta y sus muestras.",
+                "Exhibición de tecnología frente a carteles del proyecto.",
+                "Integrantes explican un prototipo de su stand.",
+                "Equipo posa frente a un módulo decorado con banderines.",
+                "Participantes muestran su proyecto BiCire.",
+                "Presentación de una propuesta de reciclaje y energía.",
+                "Stand tecnológico con prototipos y carteles informativos.",
+                "Equipo exhibe muestras en un módulo verde.",
+                "Integrantes presentan un proyecto con materiales ecológicos.",
+                "Participantes muestran su propuesta de recursos naturales.",
+                "Equipo presenta su proyecto Green Gas.",
+                "Integrantes muestran materiales del proyecto Waste to Watts.",
+                "Exposición de una maqueta y un equipo tecnológico.",
+                "Participantes junto a muestras y carteles de su proyecto.",
+                "Equipo frente a su propuesta y pantallas de exhibición.",
+                "Integrantes exhiben dispositivos y materiales tecnológicos.",
+                "Equipo presenta un proyecto con luces azules.",
+                "Participantes explican su propuesta al público.",
+                "Expositoras frente a una exhibición con iluminación.",
+                "Equipo muestra una propuesta de productos naturales.",
+                "Participantes presentan la propuesta EcoTrack.",
+                "Integrantes muestran muestras y carteles informativos.",
+                "Equipo exhibe productos del proyecto Naturia.",
+                "Participantes presentan el proyecto Kefirizz.",
+                "Equipo muestra productos alimenticios en su stand.",
+                "Expositores atienden visitantes junto a sus muestras.",
+                "Dos participantes frente a una exposición ecológica.",
+                "Visitantes conocen una propuesta en un stand verde.",
+                "Demostración de productos en el área de exhibición.",
+                "Participante exhibe productos en un módulo naranja.",
+                "Equipo presenta su propuesta Nutrimaz.",
+                "Evaluadores escuchan una explicación en el stand.",
+                "Equipo muestra muestras y productos del proyecto Neemvex.",
+                "Integrantes posan junto a productos de su propuesta.",
+                "Expositoras presentan artículos de papel reciclado.",
+                "Equipo muestra su propuesta de productos naturales.",
+                "Participantes posan frente a su stand decorado.",
+                "Integrantes presentan productos y muestras elaboradas.",
+                "Equipo muestra una propuesta con decoración ecológica.",
+                "Evaluadores observan un proyecto junto al stand.",
+                "Participantes exhiben dispositivos en el módulo.",
+                "Equipo posa con computadoras y muestras de trabajo.",
+                "Integrantes presentan una propuesta tecnológica.",
+                "Participantes muestran un prototipo sobre una mesa.",
+                "Equipo muestra productos en su stand verde.",
+                "Integrantes presentan su proyecto en un módulo oscuro.",
+                "Equipo posa frente a su presentación tecnológica.",
+                "Participantes muestran computadoras y material gráfico.",
+                "Integrantes posan junto a su proyecto de innovación."
+        ]
+};
+
+      const galerias = {
+        "galeria-recepcion": { carpeta: "img/recepcion/", inicio: 2, fin: 14, extension: ".jpeg", titulo: "Recepción", textos: descripciones.recepcion },
+        "galeria-stands": { carpeta: "img/stands-evaluaciones/", inicio: 1, fin: 138, extension: ".jpg", titulo: "Stands y Evaluaciones", omitidos: [18,21,25,31,34,41,42,49,55,58,65,102,105,133], textos: descripciones.stands },
+        "galeria-stands-dia2": { carpeta: "img/stands-dia-2/", inicio: 1, fin: 109, extension: ".jpg", titulo: "Stands Día 2", textos: descripciones.dia2 }
+      };
+
+      document.querySelectorAll(".galeria-participantes-boton").forEach(function (boton) {
+        boton.addEventListener("click", function () {
+          const id = boton.dataset.galeria;
+          const contenedor = document.getElementById(id);
+          const datos = galerias[id];
+          if (!contenedor || !datos) return;
+
+          if (!contenedor.dataset.cargada) {
+            const fragmento = document.createDocumentFragment();
+            for (let numero = datos.inicio; numero <= datos.fin; numero++) {
+              if (datos.omitidos && datos.omitidos.includes(numero)) continue;
+              const ruta = datos.carpeta + "foto_" + String(numero).padStart(3, "0") + datos.extension;
+              const indice = numero - datos.inicio;
+              const descripcion = datos.textos[indice] || "Imagen de InnovaTecNM 2026";
+              const tarjeta = document.createElement("figure");
+              tarjeta.className = "galeria-participantes-tarjeta";
+
+              // Tarjeta 3D: gira al pasar el mouse, recibir foco o tocarla.
+              const botonGiro = document.createElement("button");
+              botonGiro.type = "button";
+              botonGiro.className = "galeria-participantes-voltear";
+              botonGiro.setAttribute("aria-label", "Ver descripción de fotografía: " + descripcion);
+              botonGiro.setAttribute("aria-pressed", "false");
+
+              const interior = document.createElement("span");
+              interior.className = "galeria-participantes-interior";
+              const frente = document.createElement("span");
+              frente.className = "galeria-participantes-cara galeria-participantes-frente";
+              const imagen = document.createElement("img");
+              imagen.src = ruta;
+              imagen.alt = descripcion;
+              imagen.loading = "lazy";
+              imagen.decoding = "async";
+              frente.appendChild(imagen);
+
+              const reverso = document.createElement("span");
+              reverso.className = "galeria-participantes-cara galeria-participantes-reverso";
+              const icono = document.createElement("i");
+              icono.className = "bi bi-chat-square-text galeria-participantes-reverso-icono";
+              icono.setAttribute("aria-hidden", "true");
+              const etiqueta = document.createElement("span");
+              etiqueta.className = "galeria-participantes-reverso-etiqueta";
+              etiqueta.textContent = "INNOVATECNM 2026";
+              const texto = document.createElement("span");
+              texto.className = "galeria-participantes-reverso-descripcion";
+              texto.textContent = descripcion;
+              const pista = document.createElement("span");
+              pista.className = "galeria-participantes-reverso-pista";
+              pista.textContent = "Toca para regresar";
+              reverso.append(icono, etiqueta, texto, pista);
+              interior.append(frente, reverso);
+              botonGiro.appendChild(interior);
+              botonGiro.addEventListener("click", function () {
+                const girada = tarjeta.classList.toggle("girada");
+                botonGiro.setAttribute("aria-pressed", String(girada));
+                botonGiro.setAttribute("aria-label", (girada ? "Volver a fotografía" : "Ver descripción de fotografía") + ": " + descripcion);
+              });
+
+              const pie = document.createElement("figcaption");
+              pie.className = "galeria-participantes-pie";
+              const enlace = document.createElement("a");
+              enlace.className = "galeria-participantes-ampliar";
+              enlace.href = ruta;
+              enlace.target = "_blank";
+              enlace.rel = "noopener noreferrer";
+              enlace.setAttribute("aria-label", "Abrir fotografía completa: " + descripcion);
+              const iconoAmpliar = document.createElement("i");
+              iconoAmpliar.className = "bi bi-arrows-fullscreen";
+              iconoAmpliar.setAttribute("aria-hidden", "true");
+              enlace.append(iconoAmpliar, document.createTextNode(" Ver foto completa"));
+              pie.appendChild(enlace);
+              tarjeta.append(botonGiro, pie);
+              fragmento.appendChild(tarjeta);
+            }
+            contenedor.appendChild(fragmento);
+            contenedor.dataset.cargada = "true";
+          }
+
+          const abrir = contenedor.hidden;
+          contenedor.hidden = !abrir;
+          boton.setAttribute("aria-expanded", String(abrir));
+          boton.querySelector(".galeria-participantes-texto").textContent = abrir ? "Cerrar" : "Ver";
+          boton.querySelector("i").className = abrir ? "bi bi-chevron-up" : "bi bi-chevron-down";
         });
       });
     });
